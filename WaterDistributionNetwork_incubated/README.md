@@ -1,0 +1,1 @@
+This data model [WaterDistributionNetwork](https://github.com/smart-data-models/incubated/tree/master/WaterDistributionNetwork) is being incubated in this directory of the [incubated repository](https://github.com/smart-data-models/incubated) 

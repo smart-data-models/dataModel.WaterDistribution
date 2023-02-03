@@ -1,0 +1,115 @@
+{
+  "id": "uri:ngsi-ld:WaterDistributionNetwork:0001",
+  "type": "WaterDistributionNetwork",
+  "tankDiameter": {
+    "type": "Property",
+    "value": 10
+  },
+  "totalML": {
+    "type": "Property",
+    "value": 250
+  },
+  "tankCapacity": {
+    "type": "Property",
+    "value": 500
+  },
+  "waterFlow": {
+    "type": "Property",
+    "value": 14
+  },
+  "tankBreadth": {
+    "type": "Property",
+    "value": 50
+  },
+  "tankDepth": {
+    "type": "Property",
+    "value": 200
+  },
+  "flowrate": {
+    "type": "Property",
+    "value": 70
+  },
+  "tankLength": {
+    "type": "Property",
+    "value": 300
+  },
+  "waterTemperature": {
+    "type": "Property",
+    "value": 20
+  },
+  "waterPressure": {
+    "type": "Property",
+    "value": 5
+  },
+  "turbidityTSA": {
+    "type": "Property",
+    "value": {
+      "avgOverTime": 14,
+      "maxOverTime": 23,
+      "instValue": 34,
+      "minOverTime": 12
+    }
+  },
+  "clTSA": {
+    "type": "Property",
+    "value": {
+      "avgOverTime": 6,
+      "maxOverTime": 20,
+      "instValue": 12,
+      "minOverTime": 23
+    }
+  },
+  "pHTSA": {
+    "type": "Property",
+    "value": {
+      "avgOverTime": 6,
+      "maxOverTime": 8,
+      "instValue": 7,
+      "minOverTime": 6
+    }
+  },
+  "deviceInfo": {
+    "type": "Property",
+    "value": {
+      "rfID": "345438",
+      "deviceBatteryStatus": "Connected",
+      "deviceName": " Device 4",
+      "deviceID": "234",
+      "measurand": "2",
+      "deviceSimProperty": "9883829934",
+      "deviceModel": {
+        "brandName": "Trumen Technologies Private Limited",
+        "manufacturerName": "Trumen Technologies Private Limited",
+        "modelName": "Model 4",
+        "modelURL": "https://trumen.in/"
+      }
+    }
+  },
+  "waterLevel": {
+    "type": "Property",
+    "value": 57
+  },
+  "tankName": {
+    "type": "Property",
+    "value": "Tank 16"
+  },
+  "tankShape": {
+    "type": "Property",
+    "value": "Cylindrical"
+  },
+  "observationDateTime": {
+    "type": "Property",
+    "value": {
+      "@type": "Date-Time",
+      "@value": "2021-03-11T15:51:02+05:30"
+    }
+  },
+  "compensatedTDS": {
+    "type": "Property",
+    "value": 25
+  },
+  "uncompensatedTDS": {
+    "type": "Property",
+    "value": 27
+  }
+}

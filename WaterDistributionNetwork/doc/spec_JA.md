@@ -7,16 +7,18 @@
 [ドキュメント自動生成](https://docs.google.com/presentation/d/e/2PACX-1vTs-Ng5dIAwkg91oTTUdt8ua7woBXhPnwavZ0FxgR8BsAI_Ek3C5q97Nd94HS8KhP-r_quD4H0fgyt3/pub?start=false&loop=false&delayms=3000#slide=id.gb715ace035_0_60)  
 <!-- /15-License -->  
 <!-- 20-Description -->  
+グローバルな記述です。**ある都市の水道網のデータモデル。  
+バージョン: 0.0.1  
 <!-- /20-Description -->  
 <!-- 30-PropertiesList -->  
 
 ## プロパティ一覧  
 
 <sup><sub>[*] 属性にタイプがない場合、複数のタイプまたは異なるフォーマット/パターンを持つ可能性があるためです</sub></sup>。  
-<!-- /30-PropertiesList -->  
+- `address[object]`: 郵送先住所  . Model: [https://schema.org/address](https://schema.org/address)- `alternateName[string]`: この項目の別称  - `areaServed[string]`: サービスまたは提供品が提供される地理的な地域  . Model: [https://schema.org/Text](https://schema.org/Text)- `clTSA[object]`: 水中の塩化物の濃度。  . Model: [https://schema.org/Text](https://schema.org/Text)- `compensatedTDS[number]`: 水中のTDS（Total Dissolved Solids）濃度を温度補正した値です。  . Model: [https://schema.org/Number](https://schema.org/Number)- `dataProvider[string]`: 調和されたデータエンティティの提供者を識別する一連の文字。  - `dateCreated[string]`: エンティティの作成タイムスタンプ。これは通常、ストレージプラットフォームによって割り当てられる。  - `dateModified[string]`: エンティティの最終更新のタイムスタンプ。これは通常、ストレージプラットフォームによって割り当てられる。  - `description[string]`: このアイテムの説明  - `deviceInfo[object]`: 観測に関連するデバイスの情報。  . Model: [https://schema.org/Text](https://schema.org/Text)- `flowrate[number]`: この観測に対応する貯水槽への水の流入・流出量。  . Model: [https://schema.org/Number](https://schema.org/Number)- `id[*]`: エンティティの一意な識別子  - `location[*]`: アイテムへの Geojson リファレンス。Point, LineString, Polygon, MultiPoint, MultiLineString, MultiPolygonのいずれかを指定することができる。  - `name[string]`: このアイテムの名称です。  - `observationDateTime[string]`: 最後に報告された観測時刻。  . Model: [https://schema.org/Text](https://schema.org/Text)- `owner[array]`: 所有者の一意のIDを参照するJSONエンコードされた文字列を含むリストです。  - `pHTSA[object]`: 水中の酸性度、塩基性度。  . Model: [https://schema.org/Text](https://schema.org/Text)- `seeAlso[*]`: 項目に関する追加リソースを指すURIのリスト。  - `source[string]`: エンティティデータの元のソースをURLで示す一連の文字。ソースプロバイダの完全修飾ドメイン名、またはソースオブジェクトのURLであることが推奨されます。  - `tankBreadth[number]`: キューボイド型貯水槽の横幅。  . Model: [https://schema.org/Number](https://schema.org/Number)- `tankCapacity[number]`: この観測に対応する貯水タンクが保持できる最大水量。  . Model: [https://schema.org/Number](https://schema.org/Number)- `tankDepth[number]`: この観測に対応する貯水槽の深さ。  . Model: [https://schema.org/Number](https://schema.org/Number)- `tankDiameter[number]`: 円筒形または球形の貯水槽の直径。  . Model: [https://schema.org/Number](https://schema.org/Number)- `tankLength[number]`: キューボイド型貯水槽の長さ。  . Model: [https://schema.org/Number](https://schema.org/Number)- `tankName[string]`: この観測に対応する貯水槽の名称。  . Model: [https://schema.org/Text](https://schema.org/Text)- `tankShape[string]`: この観測に対応する貯水槽の物理的形状。ENUM: [円筒形, 円錐形, 立方体, 球形].  . Model: [https://schema.org/Text](https://schema.org/Text)- `totalML[number]`: この観測に対応する貯水槽からの総排水量MLDs。  . Model: [https://schema.org/Number](https://schema.org/Number)- `turbidityTSA[object]`: 水中に光を当てたとき、水中の物質によって散乱される光の量を測定すること。  . Model: [https://schema.org/Text](https://schema.org/Text)- `uncompensatedTDS[number]`: 水中のTDS（Total Dissolved Solids）濃度を温度補正せずに表した値。  . Model: [https://schema.org/Number](https://schema.org/Number)- `waterFlow[number]`: この観測に対応する貯水槽から流れる水の流れ、あるいは水流。  . Model: [https://schema.org/Number](https://schema.org/Number)- `waterLevel[number]`: この観測に対応する現在の貯水槽の水位。  . Model: [https://schema.org/Number](https://schema.org/Number)- `waterPressure[number]`: この観測に対応する貯水槽から流れる水の圧力。  . Model: [https://schema.org/Number](https://schema.org/Number)- `waterTemperature[number]`: この観測に対応する貯水槽の水温。  . Model: [https://schema.org/Number](https://schema.org/Number)<!-- /30-PropertiesList -->  
 <!-- 35-RequiredProperties -->  
 必要なプロパティ  
-- 必要なプロパティはありません  <!-- /35-RequiredProperties -->  
+- `id`  - `type`  <!-- /35-RequiredProperties -->  
 <!-- 40-RequiredProperties -->  
 <!-- /40-RequiredProperties -->  
 <!-- 50-DataModelHeader -->  

@@ -1,5 +1,6 @@
 {
     "@context": {
+        "WaterDistributionNetwork": "https://smartdatamodels.org/dataModel.WaterDistribution/WaterDistributionNetwork",
         "address": "https://smartdatamodels.org/address",
         "alternateName": "https://smartdatamodels.org/alternateName",
         "areaServed": "https://smartdatamodels.org/areaServed",

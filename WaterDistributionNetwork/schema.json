@@ -1,5 +1,5 @@
 {
-  "$schema": "http://json-schema.org/schema",
+  "$schema": "https://json-schema.org/schema",
   "$schemaVersion": "0.0.1",
   "$id": "https://smart-data-models.github.io/SmartWater/WaterDistributionNetwork/schema.json",
   "title": "Smart Data models - WaterDistributionNetwork schema",
@@ -60,45 +60,45 @@
         },
         "turbidityTSA": {
           "type": "object",
-          "description": "Property. Model:'https://schema.org/Text. Measurement of the amount of light that is scattered by material in the water when a light is shined through the water.",
+          "description": "Property. Model:'https://schema.org/Text'. Measurement of the amount of light that is scattered by material in the water when a light is shined through the water.",
           "properties": {
             "avgOverTime": {
               "type": "number",
-              "description": "Property. Model:'https://schema.org/Text. Describes the average value of a time-series data over a specified duration in past. The duration is specified using another parameter in the value descriptor object related to this value"
+              "description": "Property. Model:'https://schema.org/Text'. Describes the average value of a time-series data over a specified duration in past. The duration is specified using another parameter in the value descriptor object related to this value"
             },
             "maxOverTime": {
               "type": "number",
-              "description": "Property. Model:'https://schema.org/Text.Describes the maximum value of a time-series data over a specified duration in past. The duration is specified using another parameter in the value descriptor object related to this value"
+              "description": "Property. Model:'https://schema.org/Text'. Describes the maximum value of a time-series data over a specified duration in past. The duration is specified using another parameter in the value descriptor object related to this value"
             },
             "instValue": {
               "type": "number",
-              "description": "Property. Model:'https://schema.org/Text.Describes the instantaneous value (associated with the current timestamp) of a time varying quantity."
+              "description": "Property. Model:'https://schema.org/Text'. Describes the instantaneous value (associated with the current timestamp) of a time varying quantity."
             },
             "minOverTime": {
               "type": "number",
-              "description": "Property. Model:'https://schema.org/Text. Describes the minimum value of a time-series data over a specified duration in past. The duration is specified using another parameter in the value descriptor object related to this value"
+              "description": "Property. Model:'https://schema.org/Text'. Describes the minimum value of a time-series data over a specified duration in past. The duration is specified using another parameter in the value descriptor object related to this value"
             }
           }
         },
         "clTSA": {
           "type": "object",
-          "description": "Property. Model:'https://schema.org/Text. Concentration of chlorides in the water.",
+          "description": "Property. Model:'https://schema.org/Text'. Concentration of chlorides in the water.",
           "properties": {
             "avgOverTime": {
               "type": "number",
-              "description": "Property. Model:'https://schema.org/Text. Describes the average value of a time-series data over a specified duration in past. The duration is specified using another parameter in the value descriptor object related to this value"
+              "description": "Property. Model:'https://schema.org/Text'. Describes the average value of a time-series data over a specified duration in past. The duration is specified using another parameter in the value descriptor object related to this value"
             },
             "maxOverTime": {
               "type": "number",
-              "description": "Property. Model:'https://schema.org/Text.Describes the maximum value of a time-series data over a specified duration in past. The duration is specified using another parameter in the value descriptor object related to this value"
+              "description": "Property. Model:'https://schema.org/Text'. Describes the maximum value of a time-series data over a specified duration in past. The duration is specified using another parameter in the value descriptor object related to this value"
             },
             "instValue": {
               "type": "number",
-              "description": "Property. Model:'https://schema.org/Text.Describes the instantaneous value (associated with the current timestamp) of a time varying quantity."
+              "description": "Property. Model:'https://schema.org/Text'. Describes the instantaneous value (associated with the current timestamp) of a time varying quantity."
             },
             "minOverTime": {
               "type": "number",
-              "description": "Property. Model:'https://schema.org/Text. Describes the minimum value of a time-series data over a specified duration in past. The duration is specified using another parameter in the value descriptor object related to this value"
+              "description": "Property. Model:'https://schema.org/Text'. Describes the minimum value of a time-series data over a specified duration in past. The duration is specified using another parameter in the value descriptor object related to this value"
             }
           }
         },
@@ -123,77 +123,77 @@
             "Cuboid",
             "Spherical"
           ],
-          "description": "Property. Model:'https://schema.org/Text. Physical shape of the water storage tank corresponding to this observation. ENUM: [Cylindrical, Conical, Cuboid, Spherical]"
+          "description": "Property. Model:'https://schema.org/Text'. Physical shape of the water storage tank corresponding to this observation. ENUM: [Cylindrical, Conical, Cuboid, Spherical]"
         },
         "pHTSA": {
           "type": "object",
-          "description": "Property. Model:'https://schema.org/Text. Acidity level or basicity level obsevered in the water.",
+          "description": "Property. Model:'https://schema.org/Text'. Acidity level or basicity level obsevered in the water.",
           "properties": {
             "avgOverTime": {
               "type": "number",
-              "description": "Property. Model:'https://schema.org/Text. Describes the average value of a time-series data over a specified duration in past. The duration is specified using another parameter in the value descriptor object related to this value"
+              "description": "Property. Model:'https://schema.org/Text'. Describes the average value of a time-series data over a specified duration in past. The duration is specified using another parameter in the value descriptor object related to this value"
             },
             "maxOverTime": {
               "type": "number",
-              "description": "Property. Model:'https://schema.org/Text.Describes the maximum value of a time-series data over a specified duration in past. The duration is specified using another parameter in the value descriptor object related to this value"
+              "description": "Property. Model:'https://schema.org/Text'. Describes the maximum value of a time-series data over a specified duration in past. The duration is specified using another parameter in the value descriptor object related to this value"
             },
             "instValue": {
               "type": "number",
-              "description": "Property. Model:'https://schema.org/Text.Describes the instantaneous value (associated with the current timestamp) of a time varying quantity."
+              "description": "Property. Model:'https://schema.org/Text'. Describes the instantaneous value (associated with the current timestamp) of a time varying quantity."
             },
             "minOverTime": {
               "type": "number",
-              "description": "Property. Model:'https://schema.org/Text. Describes the minimum value of a time-series data over a specified duration in past. The duration is specified using another parameter in the value descriptor object related to this value"
+              "description": "Property. Model:'https://schema.org/Text'. Describes the minimum value of a time-series data over a specified duration in past. The duration is specified using another parameter in the value descriptor object related to this value"
             }
           }
         },
         "deviceInfo": {
           "type": "object",
-          "description": "Property. Model:'https://schema.org/Text. Information about the device associated with the observations.",
+          "description": "Property. Model:'https://schema.org/Text'. Information about the device associated with the observations.",
           "properties": {
             "rfID": {
               "type": "string",
-              "description": "Property. Model:'https://schema.org/Text.Gives the ID of the RFID reader."
+              "description": "Property. Model:'https://schema.org/Text'. Gives the ID of the RFID reader."
             },
             "deviceBatteryStatus": {
               "type": "string",
-              "description": "Property. Model:'https://schema.org/Text.Gives the Battery charging status of the reporting device(Connected, Disconnected)."
+              "description": "Property. Model:'https://schema.org/Text'. Gives the Battery charging status of the reporting device(Connected, Disconnected)."
             },
             "deviceName": {
               "type": "string",
-              "description": "Property. Model:'https://schema.org/Text.Device Name or Station name of the sensor device/station corresponding to this observation."
+              "description": "Property. Model:'https://schema.org/Text'. Device Name or Station name of the sensor device/station corresponding to this observation."
             },
             "deviceID": {
               "type": "string",
-              "description": "Property. Model:'https://schema.org/Text. Device ID of the physical sensor/ measurement station corresponding to this observation."
+              "description": "Property. Model:'https://schema.org/Text'. Device ID of the physical sensor/ measurement station corresponding to this observation."
             },
             "measurand": {
               "type": "string",
-              "description": "Property. Model:'https://schema.org/Text. Property/properties sensed/observed/measured by the device."
+              "description": "Property. Model:'https://schema.org/Text'. Property/properties sensed/observed/measured by the device."
             },
             "deviceSimNumber": {
               "type": "string",
-              "description": "Property. Model:'https://schema.org/Text. Gives the sim number of the device in the waste management vehicle."
+              "description": "Property. Model:'https://schema.org/Text'. Gives the sim number of the device in the waste management vehicle."
             },
             "deviceModel": {
               "type": "object",
-              "description": "Property. Model:'https://schema.org/Text. Describes the information of the device, sensor or system in consideration.",
+              "description": "Property. Model:'https://schema.org/Text'. Describes the information of the device, sensor or system in consideration.",
               "properties": {
                 "brandName": {
                   "type": "string",
-                  "description": "Property. Model:'https://schema.org/Text.\tName of the brand associated with an entity, e.g., sensor, device etc."
+                  "description": "Property. Model:'https://schema.org/Text'. Name of the brand associated with an entity, e.g., sensor, device etc."
                 },
                 "manufacturerName": {
                   "type": "string",
-                  "description": "Property. Model:'https://schema.org/Text.\tName of the manufacturer associated with an entity, e.g., sensor, device etc."
+                  "description": "Property. Model:'https://schema.org/Text'. Name of the manufacturer associated with an entity, e.g., sensor, device etc."
                 },
                 "modelName": {
                   "type": "string",
-                  "description": "Property. Model:'https://schema.org/Text.\tName of a specific model associated with an entity, e.g., sensor, device etc."
+                  "description": "Property. Model:'https://schema.org/Text'. Name of a specific model associated with an entity, e.g., sensor, device etc."
                 },
                 "modelURL": {
                   "type": "string",
-                  "description": "Property. Model:'https://schema.org/Text.\tURL providing further information of a specific model associated with an entity, e.g., sensor, device etc."
+                  "description": "Property. Model:'https://schema.org/Text'. URL providing further information of a specific model associated with an entity, e.g., sensor, device etc."
                 }
               }
             }

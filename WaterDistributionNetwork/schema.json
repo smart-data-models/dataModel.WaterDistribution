@@ -60,45 +60,45 @@
         },
         "turbidityTSA": {
           "type": "object",
-          "description": "Property. Model:'https://schema.org/Text'. Measurement of the amount of light that is scattered by material in the water when a light is shined through the water.",
+          "description": "Property. Measurement of the amount of light that is scattered by material in the water when a light is shined through the water.",
           "properties": {
             "avgOverTime": {
               "type": "number",
-              "description": "Property. Model:'https://schema.org/Text'. Describes the average value of a time-series data over a specified duration in past. The duration is specified using another parameter in the value descriptor object related to this value"
+              "description": "Property. Model:'https://schema.org/Number'. Describes the average value of a time-series data over a specified duration in past. The duration is specified using another parameter in the value descriptor object related to this value"
             },
             "maxOverTime": {
               "type": "number",
-              "description": "Property. Model:'https://schema.org/Text'. Describes the maximum value of a time-series data over a specified duration in past. The duration is specified using another parameter in the value descriptor object related to this value"
+              "description": "Property. Model:'https://schema.org/Number'. Describes the maximum value of a time-series data over a specified duration in past. The duration is specified using another parameter in the value descriptor object related to this value"
             },
             "instValue": {
               "type": "number",
-              "description": "Property. Model:'https://schema.org/Text'. Describes the instantaneous value (associated with the current timestamp) of a time varying quantity."
+              "description": "Property. Model:'https://schema.org/Number'. Describes the instantaneous value (associated with the current timestamp) of a time varying quantity."
             },
             "minOverTime": {
               "type": "number",
-              "description": "Property. Model:'https://schema.org/Text'. Describes the minimum value of a time-series data over a specified duration in past. The duration is specified using another parameter in the value descriptor object related to this value"
+              "description": "Property. Model:'https://schema.org/Number'. Describes the minimum value of a time-series data over a specified duration in past. The duration is specified using another parameter in the value descriptor object related to this value"
             }
           }
         },
         "clTSA": {
           "type": "object",
-          "description": "Property. Model:'https://schema.org/Text'. Concentration of chlorides in the water.",
+          "description": "Property. Concentration of chlorides in the water.",
           "properties": {
             "avgOverTime": {
               "type": "number",
-              "description": "Property. Model:'https://schema.org/Text'. Describes the average value of a time-series data over a specified duration in past. The duration is specified using another parameter in the value descriptor object related to this value"
+              "description": "Property. Model:'https://schema.org/Number'. Describes the average value of a time-series data over a specified duration in past. The duration is specified using another parameter in the value descriptor object related to this value"
             },
             "maxOverTime": {
               "type": "number",
-              "description": "Property. Model:'https://schema.org/Text'. Describes the maximum value of a time-series data over a specified duration in past. The duration is specified using another parameter in the value descriptor object related to this value"
+              "description": "Property. Model:'https://schema.org/Number'. Describes the maximum value of a time-series data over a specified duration in past. The duration is specified using another parameter in the value descriptor object related to this value"
             },
             "instValue": {
               "type": "number",
-              "description": "Property. Model:'https://schema.org/Text'. Describes the instantaneous value (associated with the current timestamp) of a time varying quantity."
+              "description": "Property. Model:'https://schema.org/Number'. Describes the instantaneous value (associated with the current timestamp) of a time varying quantity."
             },
             "minOverTime": {
               "type": "number",
-              "description": "Property. Model:'https://schema.org/Text'. Describes the minimum value of a time-series data over a specified duration in past. The duration is specified using another parameter in the value descriptor object related to this value"
+              "description": "Property. Model:'https://schema.org/Number'. Describes the minimum value of a time-series data over a specified duration in past. The duration is specified using another parameter in the value descriptor object related to this value"
             }
           }
         },
@@ -113,7 +113,7 @@
         "observationDateTime": {
           "type": "string",
           "format": "date-time",
-          "description": "Property. Model:'https://schema.org/Text'. Last reported time of observation."
+          "description": "Property. Model:'https://schema.org/Date-Time'. Last reported time of observation."
         },
         "tankShape": {
           "type": "string",
@@ -127,29 +127,29 @@
         },
         "pHTSA": {
           "type": "object",
-          "description": "Property. Model:'https://schema.org/Text'. Acidity level or basicity level obsevered in the water.",
+          "description": "Property. Acidity level or basicity level observed in the water.",
           "properties": {
             "avgOverTime": {
               "type": "number",
-              "description": "Property. Model:'https://schema.org/Text'. Describes the average value of a time-series data over a specified duration in past. The duration is specified using another parameter in the value descriptor object related to this value"
+              "description": "Property. Model:'https://schema.org/Number'. Describes the average value of a time-series data over a specified duration in past. The duration is specified using another parameter in the value descriptor object related to this value"
             },
             "maxOverTime": {
               "type": "number",
-              "description": "Property. Model:'https://schema.org/Text'. Describes the maximum value of a time-series data over a specified duration in past. The duration is specified using another parameter in the value descriptor object related to this value"
+              "description": "Property. Model:'https://schema.org/Number'. Describes the maximum value of a time-series data over a specified duration in past. The duration is specified using another parameter in the value descriptor object related to this value"
             },
             "instValue": {
               "type": "number",
-              "description": "Property. Model:'https://schema.org/Text'. Describes the instantaneous value (associated with the current timestamp) of a time varying quantity."
+              "description": "Property. Model:'https://schema.org/Number'. Describes the instantaneous value (associated with the current timestamp) of a time varying quantity."
             },
             "minOverTime": {
               "type": "number",
-              "description": "Property. Model:'https://schema.org/Text'. Describes the minimum value of a time-series data over a specified duration in past. The duration is specified using another parameter in the value descriptor object related to this value"
+              "description": "Property. Model:'https://schema.org/Number'. Describes the minimum value of a time-series data over a specified duration in past. The duration is specified using another parameter in the value descriptor object related to this value"
             }
           }
         },
         "deviceInfo": {
           "type": "object",
-          "description": "Property. Model:'https://schema.org/Text'. Information about the device associated with the observations.",
+          "description": "Property. Information about the device associated with the observations.",
           "properties": {
             "rfID": {
               "type": "string",
@@ -177,7 +177,7 @@
             },
             "deviceModel": {
               "type": "object",
-              "description": "Property. Model:'https://schema.org/Text'. Describes the information of the device, sensor or system in consideration.",
+              "description": "Property. Describes the information of the device, sensor or system in consideration.",
               "properties": {
                 "brandName": {
                   "type": "string",

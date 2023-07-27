@@ -1,29 +1,29 @@
 <!-- 10-Header -->  
 [![Smart Data Models](https://smartdatamodels.org/wp-content/uploads/2022/01/SmartDataModels_logo.png "Logo")](https://smartdatamodels.org)  
-エンティティWaterDistributionNetwork（配水ネットワーク  
-=======================================<!-- /10-Header -->  
+エンティティ配水ネットワーク  
+==============<!-- /10-Header -->  
 <!-- 15-License -->  
-[オープンライセンス](https://github.com/smart-data-models//dataModel.WaterDistribution/blob/master/WaterDistributionNetwork/LICENSE.md)  
-[ドキュメント自動生成](https://docs.google.com/presentation/d/e/2PACX-1vTs-Ng5dIAwkg91oTTUdt8ua7woBXhPnwavZ0FxgR8BsAI_Ek3C5q97Nd94HS8KhP-r_quD4H0fgyt3/pub?start=false&loop=false&delayms=3000#slide=id.gb715ace035_0_60)  
+[オープン・ライセンス](https://github.com/smart-data-models//dataModel.WaterDistribution/blob/master/WaterDistributionNetwork/LICENSE.md)  
+[文書は自動的に生成される](https://docs.google.com/presentation/d/e/2PACX-1vTs-Ng5dIAwkg91oTTUdt8ua7woBXhPnwavZ0FxgR8BsAI_Ek3C5q97Nd94HS8KhP-r_quD4H0fgyt3/pub?start=false&loop=false&delayms=3000#slide=id.gb715ace035_0_60)  
 <!-- /15-License -->  
 <!-- 20-Description -->  
-グローバルな記述です。**ある都市の水道網のデータモデル。  
+グローバルな記述**都市の水道網のデータモデル。  
 バージョン: 0.0.1  
 <!-- /20-Description -->  
 <!-- 30-PropertiesList -->  
 
-## プロパティ一覧  
+## プロパティのリスト  
 
-<sup><sub>[*] 属性にタイプがない場合、複数のタイプまたは異なるフォーマット/パターンを持つ可能性があるためです</sub></sup>。  
-- `address[object]`: 郵送先住所  . Model: [https://schema.org/address](https://schema.org/address)- `alternateName[string]`: この項目の別称  - `areaServed[string]`: サービスまたは提供品が提供される地理的な地域  . Model: [https://schema.org/Text](https://schema.org/Text)- `clTSA[object]`: 水中の塩化物の濃度。  . Model: [https://schema.org/Text](https://schema.org/Text)- `compensatedTDS[number]`: 水中のTDS（Total Dissolved Solids）濃度を温度補正した値です。  . Model: [https://schema.org/Number](https://schema.org/Number)- `dataProvider[string]`: 調和されたデータエンティティの提供者を識別する一連の文字。  - `dateCreated[string]`: エンティティの作成タイムスタンプ。これは通常、ストレージプラットフォームによって割り当てられる。  - `dateModified[string]`: エンティティの最終更新のタイムスタンプ。これは通常、ストレージプラットフォームによって割り当てられる。  - `description[string]`: このアイテムの説明  - `deviceInfo[object]`: 観測に関連するデバイスの情報。  . Model: [https://schema.org/Text](https://schema.org/Text)- `flowrate[number]`: この観測に対応する貯水槽への水の流入・流出量。  . Model: [https://schema.org/Number](https://schema.org/Number)- `id[*]`: エンティティの一意な識別子  - `location[*]`: アイテムへの Geojson リファレンス。Point, LineString, Polygon, MultiPoint, MultiLineString, MultiPolygonのいずれかを指定することができる。  - `name[string]`: このアイテムの名称です。  - `observationDateTime[string]`: 最後に報告された観測時刻。  . Model: [https://schema.org/Text](https://schema.org/Text)- `owner[array]`: 所有者の一意のIDを参照するJSONエンコードされた文字列を含むリストです。  - `pHTSA[object]`: 水中の酸性度、塩基性度。  . Model: [https://schema.org/Text](https://schema.org/Text)- `seeAlso[*]`: 項目に関する追加リソースを指すURIのリスト。  - `source[string]`: エンティティデータの元のソースをURLで示す一連の文字。ソースプロバイダの完全修飾ドメイン名、またはソースオブジェクトのURLであることが推奨されます。  - `tankBreadth[number]`: キューボイド型貯水槽の横幅。  . Model: [https://schema.org/Number](https://schema.org/Number)- `tankCapacity[number]`: この観測に対応する貯水タンクが保持できる最大水量。  . Model: [https://schema.org/Number](https://schema.org/Number)- `tankDepth[number]`: この観測に対応する貯水槽の深さ。  . Model: [https://schema.org/Number](https://schema.org/Number)- `tankDiameter[number]`: 円筒形または球形の貯水槽の直径。  . Model: [https://schema.org/Number](https://schema.org/Number)- `tankLength[number]`: キューボイド型貯水槽の長さ。  . Model: [https://schema.org/Number](https://schema.org/Number)- `tankName[string]`: この観測に対応する貯水槽の名称。  . Model: [https://schema.org/Text](https://schema.org/Text)- `tankShape[string]`: この観測に対応する貯水槽の物理的形状。ENUM: [円筒形, 円錐形, 立方体, 球形].  . Model: [https://schema.org/Text](https://schema.org/Text)- `totalML[number]`: この観測に対応する貯水槽からの総排水量MLDs。  . Model: [https://schema.org/Number](https://schema.org/Number)- `turbidityTSA[object]`: 水中に光を当てたとき、水中の物質によって散乱される光の量を測定すること。  . Model: [https://schema.org/Text](https://schema.org/Text)- `uncompensatedTDS[number]`: 水中のTDS（Total Dissolved Solids）濃度を温度補正せずに表した値。  . Model: [https://schema.org/Number](https://schema.org/Number)- `waterFlow[number]`: この観測に対応する貯水槽から流れる水の流れ、あるいは水流。  . Model: [https://schema.org/Number](https://schema.org/Number)- `waterLevel[number]`: この観測に対応する現在の貯水槽の水位。  . Model: [https://schema.org/Number](https://schema.org/Number)- `waterPressure[number]`: この観測に対応する貯水槽から流れる水の圧力。  . Model: [https://schema.org/Number](https://schema.org/Number)- `waterTemperature[number]`: この観測に対応する貯水槽の水温。  . Model: [https://schema.org/Number](https://schema.org/Number)<!-- /30-PropertiesList -->  
+<sup><sub>[*] 属性に型がない場合は、複数の型があるか、異なるフォーマット/パターンがある可能性があるためです</sub></sup>。  
+- `address[object]`: 郵送先住所  . Model: [https://schema.org/address](https://schema.org/address)- `alternateName[string]`: この項目の別名  - `areaServed[string]`: サービスまたは提供品が提供される地理的地域  . Model: [https://schema.org/Text](https://schema.org/Text)- `clTSA[object]`: プロパティ。モデル:'https://schema.org/Text'.水中の塩化物の濃度。  . Model: [https://schema.org/Text](https://schema.org/Text)- `compensatedTDS[number]`: プロパティ。モデル:'https://schema.org/Number'.温度補正された水中のTDS（全溶解固形物）レベルの値。  . Model: [https://schema.org/Number](https://schema.org/Number)- `dataProvider[string]`: ハーモナイズされたデータ・エンティティの提供者を識別する一連の文字。  - `dateCreated[string]`: エンティティの作成タイムスタンプ。これは通常、ストレージプラットフォームによって割り当てられる。  - `dateModified[string]`: エンティティの最終変更のタイムスタンプ。これは通常、ストレージプラットフォームによって割り当てられる。  - `description[string]`: この商品の説明  - `deviceInfo[object]`: プロパティ。Model:'https://schema.org/Text'.オブザベーションに関連するデバイスに関する情報。  . Model: [https://schema.org/Text](https://schema.org/Text)- `flowrate[number]`: プロパティ。モデル:'https://schema.org/Number'.この観測に対応する貯水槽の水の出入り量。  . Model: [https://schema.org/Number](https://schema.org/Number)- `id[*]`: エンティティの一意識別子  - `location[*]`: アイテムへの Geojson 参照。Point、LineString、Polygon、MultiPoint、MultiLineString、MultiPolygon のいずれか。  - `name[string]`: このアイテムの名前。  - `observationDateTime[string]`: プロパティ。モデル:'https://schema.org/Text'.最終観測報告時刻。  . Model: [https://schema.org/Text](https://schema.org/Text)- `owner[array]`: 所有者の固有IDを参照するJSONエンコードされた文字列を含むリスト。  - `pHTSA[object]`: プロパティ。モデル:'https://schema.org/Text'.水中の酸度または塩基度。  . Model: [https://schema.org/Text](https://schema.org/Text)- `seeAlso[*]`: アイテムに関する追加リソースを指すURIのリスト  - `source[string]`: エンティティ・データの元のソースを URL として示す一連の文字。ソース・プロバイダの完全修飾ドメイン名、またはソース・オブジェクトの URL を推奨します。  - `tankBreadth[number]`: プロパティ。モデル:'https://schema.org/Number'.キューボイド型貯水槽の幅。  . Model: [https://schema.org/Number](https://schema.org/Number)- `tankCapacity[number]`: プロパティ。モデル:'https://schema.org/Number'.この観測に対応する貯水タンクが保持できる水の最大量。  . Model: [https://schema.org/Number](https://schema.org/Number)- `tankDepth[number]`: プロパティ。モデル:'https://schema.org/Number'.この観測に対応する貯水タンクの深さ。  . Model: [https://schema.org/Number](https://schema.org/Number)- `tankDiameter[number]`: プロパティ。モデル:'https://schema.org/Number'.円筒形または球形の貯水タンクの直径。  . Model: [https://schema.org/Number](https://schema.org/Number)- `tankLength[number]`: プロパティ。モデル:'https://schema.org/Number'.キューボイド型貯水タンクの長さ。  . Model: [https://schema.org/Number](https://schema.org/Number)- `tankName[string]`: プロパティ。モデル:'https://schema.org/Text'.この観測に対応する貯水タンクの名前。  . Model: [https://schema.org/Text](https://schema.org/Text)- `tankShape[string]`: プロパティ。Model:'https://schema.org/Text'.この観測に対応する貯水タンクの物理的形状。ENUM: [円筒形、円錐形、立方体、球形]。  . Model: [https://schema.org/Text](https://schema.org/Text)- `totalML[number]`: プロパティ。モデル:'https://schema.org/Number'.この観測に対応する貯水槽から排出された水の総 MLD。  . Model: [https://schema.org/Number](https://schema.org/Number)- `turbidityTSA[object]`: プロパティ。モデル:'https://schema.org/Text'.水中を通して光を当てたときに、水中の物質によって散乱される光の量の測定。  . Model: [https://schema.org/Text](https://schema.org/Text)- `uncompensatedTDS[number]`: プロパティ。モデル:'https://schema.org/Number'.温度補正なしの水中のTDS（全溶解固形物）レベルの値。  . Model: [https://schema.org/Number](https://schema.org/Number)- `waterFlow[number]`: プロパティ。Model:'https://schema.org/Number'.この観測に対応する貯水槽から流れる水の流れまたは水流。  . Model: [https://schema.org/Number](https://schema.org/Number)- `waterLevel[number]`: プロパティ。Model:'https://schema.org/Number'.この観測に対応する貯水槽の現在の水位。  . Model: [https://schema.org/Number](https://schema.org/Number)- `waterPressure[number]`: プロパティ。モデル:'https://schema.org/Number'.この観測に対応する貯水タンクから流れる水の圧力。  . Model: [https://schema.org/Number](https://schema.org/Number)- `waterTemperature[number]`: プロパティ。モデル:'https://schema.org/Number'.この観測に対応する貯水タンクの水温。  . Model: [https://schema.org/Number](https://schema.org/Number)<!-- /30-PropertiesList -->  
 <!-- 35-RequiredProperties -->  
-必要なプロパティ  
+必須プロパティ  
 - `id`  - `type`  <!-- /35-RequiredProperties -->  
 <!-- 40-RequiredProperties -->  
 <!-- /40-RequiredProperties -->  
 <!-- 50-DataModelHeader -->  
 ## プロパティのデータモデル記述  
-アルファベット順に並びます（クリックで詳細へ）  
+アルファベット順（クリックで詳細表示）  
 <!-- /50-DataModelHeader -->  
 <!-- 60-ModelYaml -->  
 <details><summary><strong>full yaml details</strong></summary>    
@@ -74,26 +74,26 @@ WaterDistributionNetwork:
         model: https://schema.org/Text    
         type: Property    
     clTSA:    
-      description: Concentration of chlorides in the water.    
+      description: 'Property. Model:''https://schema.org/Text''. Concentration of chlorides in the water.'    
       properties:    
         avgOverTime:    
-          description: 'Property. Model:''https://schema.org/Text. Describes the average value of a time-series data over a specified duration in past. The duration is specified using another parameter in the value descriptor object related to this value'    
+          description: 'Property. Model:''https://schema.org/Text''. Describes the average value of a time-series data over a specified duration in past. The duration is specified using another parameter in the value descriptor object related to this value'    
           type: number    
         instValue:    
-          description: 'Property. Model:''https://schema.org/Text.Describes the instantaneous value (associated with the current timestamp) of a time varying quantity.'    
+          description: 'Property. Model:''https://schema.org/Text''. Describes the instantaneous value (associated with the current timestamp) of a time varying quantity.'    
           type: number    
         maxOverTime:    
-          description: 'Property. Model:''https://schema.org/Text.Describes the maximum value of a time-series data over a specified duration in past. The duration is specified using another parameter in the value descriptor object related to this value'    
+          description: 'Property. Model:''https://schema.org/Text''. Describes the maximum value of a time-series data over a specified duration in past. The duration is specified using another parameter in the value descriptor object related to this value'    
           type: number    
         minOverTime:    
-          description: 'Property. Model:''https://schema.org/Text. Describes the minimum value of a time-series data over a specified duration in past. The duration is specified using another parameter in the value descriptor object related to this value'    
+          description: 'Property. Model:''https://schema.org/Text''. Describes the minimum value of a time-series data over a specified duration in past. The duration is specified using another parameter in the value descriptor object related to this value'    
           type: number    
       type: object    
       x-ngsi:    
         model: https://schema.org/Text    
         type: Property    
     compensatedTDS:    
-      description: The value of TDS (Total Dissolved Solids) level in the water with temperature compensation.    
+      description: 'Property. Model:''https://schema.org/Number''. The value of TDS (Total Dissolved Solids) level in the water with temperature compensation.'    
       type: number    
       x-ngsi:    
         model: https://schema.org/Number    
@@ -121,48 +121,48 @@ WaterDistributionNetwork:
       x-ngsi:    
         type: Property    
     deviceInfo:    
-      description: Information about the device associated with the observations.    
+      description: 'Property. Model:''https://schema.org/Text''. Information about the device associated with the observations.'    
       properties:    
         deviceBatteryStatus:    
-          description: 'Property. Model:''https://schema.org/Text.Gives the Battery charging status of the reporting device(Connected, Disconnected).'    
+          description: 'Property. Model:''https://schema.org/Text''. Gives the Battery charging status of the reporting device(Connected, Disconnected).'    
           type: string    
         deviceID:    
-          description: 'Property. Model:''https://schema.org/Text. Device ID of the physical sensor/ measurement station corresponding to this observation.'    
+          description: 'Property. Model:''https://schema.org/Text''. Device ID of the physical sensor/ measurement station corresponding to this observation.'    
           type: string    
         deviceModel:    
-          description: 'Property. Model:''https://schema.org/Text. Describes the information of the device, sensor or system in consideration.'    
+          description: 'Property. Model:''https://schema.org/Text''. Describes the information of the device, sensor or system in consideration.'    
           properties:    
             brandName:    
-              description: 'Property. Model:''https://schema.org/Text.	Name of the brand associated with an entity, e.g., sensor, device etc.'    
+              description: 'Property. Model:''https://schema.org/Text''. Name of the brand associated with an entity, e.g., sensor, device etc.'    
               type: string    
             manufacturerName:    
-              description: 'Property. Model:''https://schema.org/Text.	Name of the manufacturer associated with an entity, e.g., sensor, device etc.'    
+              description: 'Property. Model:''https://schema.org/Text''. Name of the manufacturer associated with an entity, e.g., sensor, device etc.'    
               type: string    
             modelName:    
-              description: 'Property. Model:''https://schema.org/Text.	Name of a specific model associated with an entity, e.g., sensor, device etc.'    
+              description: 'Property. Model:''https://schema.org/Text''. Name of a specific model associated with an entity, e.g., sensor, device etc.'    
               type: string    
             modelURL:    
-              description: 'Property. Model:''https://schema.org/Text.	URL providing further information of a specific model associated with an entity, e.g., sensor, device etc.'    
+              description: 'Property. Model:''https://schema.org/Text''. URL providing further information of a specific model associated with an entity, e.g., sensor, device etc.'    
               type: string    
           type: object    
         deviceName:    
-          description: 'Property. Model:''https://schema.org/Text.Device Name or Station name of the sensor device/station corresponding to this observation.'    
+          description: 'Property. Model:''https://schema.org/Text''. Device Name or Station name of the sensor device/station corresponding to this observation.'    
           type: string    
         deviceSimNumber:    
-          description: 'Property. Model:''https://schema.org/Text. Gives the sim number of the device in the waste management vehicle.'    
+          description: 'Property. Model:''https://schema.org/Text''. Gives the sim number of the device in the waste management vehicle.'    
           type: string    
         measurand:    
-          description: 'Property. Model:''https://schema.org/Text. Property/properties sensed/observed/measured by the device.'    
+          description: 'Property. Model:''https://schema.org/Text''. Property/properties sensed/observed/measured by the device.'    
           type: string    
         rfID:    
-          description: 'Property. Model:''https://schema.org/Text.Gives the ID of the RFID reader.'    
+          description: 'Property. Model:''https://schema.org/Text''. Gives the ID of the RFID reader.'    
           type: string    
       type: object    
       x-ngsi:    
         model: https://schema.org/Text    
         type: Property    
     flowrate:    
-      description: Volume of water flowing in/out of the water storage tank corresponding to this observation.    
+      description: 'Property. Model:''https://schema.org/Number''. Volume of water flowing in/out of the water storage tank corresponding to this observation.'    
       type: number    
       x-ngsi:    
         model: https://schema.org/Number    
@@ -183,7 +183,7 @@ WaterDistributionNetwork:
     location:    
       description: 'Geojson reference to the item. It can be Point, LineString, Polygon, MultiPoint, MultiLineString or MultiPolygon'    
       oneOf:    
-        - description: Geoproperty. Geojson reference to the item. Point    
+        - description: GeoProperty. Geojson reference to the item. Point    
           properties:    
             bbox:    
               items:    
@@ -204,7 +204,7 @@ WaterDistributionNetwork:
             - coordinates    
           title: GeoJSON Point    
           type: object    
-        - description: Geoproperty. Geojson reference to the item. LineString    
+        - description: GeoProperty. Geojson reference to the item. LineString    
           properties:    
             bbox:    
               items:    
@@ -228,7 +228,7 @@ WaterDistributionNetwork:
             - coordinates    
           title: GeoJSON LineString    
           type: object    
-        - description: Geoproperty. Geojson reference to the item. Polygon    
+        - description: GeoProperty. Geojson reference to the item. Polygon    
           properties:    
             bbox:    
               items:    
@@ -254,7 +254,7 @@ WaterDistributionNetwork:
             - coordinates    
           title: GeoJSON Polygon    
           type: object    
-        - description: Geoproperty. Geojson reference to the item. MultiPoint    
+        - description: GeoProperty. Geojson reference to the item. MultiPoint    
           properties:    
             bbox:    
               items:    
@@ -277,7 +277,7 @@ WaterDistributionNetwork:
             - coordinates    
           title: GeoJSON MultiPoint    
           type: object    
-        - description: Geoproperty. Geojson reference to the item. MultiLineString    
+        - description: GeoProperty. Geojson reference to the item. MultiLineString    
           properties:    
             bbox:    
               items:    
@@ -303,7 +303,7 @@ WaterDistributionNetwork:
             - coordinates    
           title: GeoJSON MultiLineString    
           type: object    
-        - description: Geoproperty. Geojson reference to the item. MultiLineString    
+        - description: GeoProperty. Geojson reference to the item. MultiLineString    
           properties:    
             bbox:    
               items:    
@@ -332,14 +332,14 @@ WaterDistributionNetwork:
           title: GeoJSON MultiPolygon    
           type: object    
       x-ngsi:    
-        type: Geoproperty    
+        type: GeoProperty    
     name:    
       description: The name of this item.    
       type: string    
       x-ngsi:    
         type: Property    
     observationDateTime:    
-      description: Last reported time of observation.    
+      description: 'Property. Model:''https://schema.org/Text''. Last reported time of observation.'    
       format: date-time    
       type: string    
       x-ngsi:    
@@ -354,19 +354,19 @@ WaterDistributionNetwork:
       x-ngsi:    
         type: Property    
     pHTSA:    
-      description: Acidity level or basicity level obsevered in the water.    
+      description: 'Property. Model:''https://schema.org/Text''. Acidity level or basicity level obsevered in the water.'    
       properties:    
         avgOverTime:    
-          description: 'Property. Model:''https://schema.org/Text. Describes the average value of a time-series data over a specified duration in past. The duration is specified using another parameter in the value descriptor object related to this value'    
+          description: 'Property. Model:''https://schema.org/Text''. Describes the average value of a time-series data over a specified duration in past. The duration is specified using another parameter in the value descriptor object related to this value'    
           type: number    
         instValue:    
-          description: 'Property. Model:''https://schema.org/Text.Describes the instantaneous value (associated with the current timestamp) of a time varying quantity.'    
+          description: 'Property. Model:''https://schema.org/Text''. Describes the instantaneous value (associated with the current timestamp) of a time varying quantity.'    
           type: number    
         maxOverTime:    
-          description: 'Property. Model:''https://schema.org/Text.Describes the maximum value of a time-series data over a specified duration in past. The duration is specified using another parameter in the value descriptor object related to this value'    
+          description: 'Property. Model:''https://schema.org/Text''. Describes the maximum value of a time-series data over a specified duration in past. The duration is specified using another parameter in the value descriptor object related to this value'    
           type: number    
         minOverTime:    
-          description: 'Property. Model:''https://schema.org/Text. Describes the minimum value of a time-series data over a specified duration in past. The duration is specified using another parameter in the value descriptor object related to this value'    
+          description: 'Property. Model:''https://schema.org/Text''. Describes the minimum value of a time-series data over a specified duration in past. The duration is specified using another parameter in the value descriptor object related to this value'    
           type: number    
       type: object    
       x-ngsi:    
@@ -390,43 +390,43 @@ WaterDistributionNetwork:
       x-ngsi:    
         type: Property    
     tankBreadth:    
-      description: Breadth of the Cuboid shaped water storage tank.    
+      description: 'Property. Model:''https://schema.org/Number''. Breadth of the Cuboid shaped water storage tank.'    
       type: number    
       x-ngsi:    
         model: https://schema.org/Number    
         type: Property    
     tankCapacity:    
-      description: Maximum amount of water the water storage tank corresponding to this observation can hold.    
+      description: 'Property. Model:''https://schema.org/Number''. Maximum amount of water the water storage tank corresponding to this observation can hold.'    
       type: number    
       x-ngsi:    
         model: https://schema.org/Number    
         type: Property    
     tankDepth:    
-      description: Depth of the water storage tank corresponding to this observation.    
+      description: 'Property. Model:''https://schema.org/Number''. Depth of the water storage tank corresponding to this observation.'    
       type: number    
       x-ngsi:    
         model: https://schema.org/Number    
         type: Property    
     tankDiameter:    
-      description: Diameter of Cylindrical or Spherical water storage tanks.    
+      description: 'Property. Model:''https://schema.org/Number''. Diameter of Cylindrical or Spherical water storage tanks.'    
       type: number    
       x-ngsi:    
         model: https://schema.org/Number    
         type: Property    
     tankLength:    
-      description: Length of the Cuboid shaped water storage tank.    
+      description: 'Property. Model:''https://schema.org/Number''. Length of the Cuboid shaped water storage tank.'    
       type: number    
       x-ngsi:    
         model: https://schema.org/Number    
         type: Property    
     tankName:    
-      description: Name of the water storage tank corresponding to this observation.    
+      description: 'Property. Model:''https://schema.org/Text''. Name of the water storage tank corresponding to this observation.'    
       type: string    
       x-ngsi:    
         model: https://schema.org/Text    
         type: Property    
     tankShape:    
-      description: 'Physical shape of the water storage tank corresponding to this observation. ENUM: [Cylindrical, Conical, Cuboid, Spherical]'    
+      description: 'Property. Model:''https://schema.org/Text''. Physical shape of the water storage tank corresponding to this observation. ENUM: [Cylindrical, Conical, Cuboid, Spherical]'    
       enum:    
         - Cylindrical    
         - Conical    
@@ -437,56 +437,56 @@ WaterDistributionNetwork:
         model: https://schema.org/Text    
         type: Property    
     totalML:    
-      description: Total MLDs of water discharged from the water storage tank corresponding to this observation.    
+      description: 'Property. Model:''https://schema.org/Number''. Total MLDs of water discharged from the water storage tank corresponding to this observation.'    
       type: number    
       x-ngsi:    
         model: https://schema.org/Number    
         type: Property    
     turbidityTSA:    
-      description: Measurement of the amount of light that is scattered by material in the water when a light is shined through the water.    
+      description: 'Property. Model:''https://schema.org/Text''. Measurement of the amount of light that is scattered by material in the water when a light is shined through the water.'    
       properties:    
         avgOverTime:    
-          description: 'Property. Model:''https://schema.org/Text. Describes the average value of a time-series data over a specified duration in past. The duration is specified using another parameter in the value descriptor object related to this value'    
+          description: 'Property. Model:''https://schema.org/Text''. Describes the average value of a time-series data over a specified duration in past. The duration is specified using another parameter in the value descriptor object related to this value'    
           type: number    
         instValue:    
-          description: 'Property. Model:''https://schema.org/Text.Describes the instantaneous value (associated with the current timestamp) of a time varying quantity.'    
+          description: 'Property. Model:''https://schema.org/Text''. Describes the instantaneous value (associated with the current timestamp) of a time varying quantity.'    
           type: number    
         maxOverTime:    
-          description: 'Property. Model:''https://schema.org/Text.Describes the maximum value of a time-series data over a specified duration in past. The duration is specified using another parameter in the value descriptor object related to this value'    
+          description: 'Property. Model:''https://schema.org/Text''. Describes the maximum value of a time-series data over a specified duration in past. The duration is specified using another parameter in the value descriptor object related to this value'    
           type: number    
         minOverTime:    
-          description: 'Property. Model:''https://schema.org/Text. Describes the minimum value of a time-series data over a specified duration in past. The duration is specified using another parameter in the value descriptor object related to this value'    
+          description: 'Property. Model:''https://schema.org/Text''. Describes the minimum value of a time-series data over a specified duration in past. The duration is specified using another parameter in the value descriptor object related to this value'    
           type: number    
       type: object    
       x-ngsi:    
         model: https://schema.org/Text    
         type: Property    
     uncompensatedTDS:    
-      description: The value of TDS (Total Dissolved Solids) level in the water without temperature compensation.    
+      description: 'Property. Model:''https://schema.org/Number''. The value of TDS (Total Dissolved Solids) level in the water without temperature compensation.'    
       type: number    
       x-ngsi:    
         model: https://schema.org/Number    
         type: Property    
     waterFlow:    
-      description: Flow or current of water flowing from the water storage tank corresponding to this observation.    
+      description: 'Property. Model:''https://schema.org/Number''. Flow or current of water flowing from the water storage tank corresponding to this observation.'    
       type: number    
       x-ngsi:    
         model: https://schema.org/Number    
         type: Property    
     waterLevel:    
-      description: Current water level in the water storage tank corresponding to this observation.    
+      description: 'Property. Model:''https://schema.org/Number''. Current water level in the water storage tank corresponding to this observation.'    
       type: number    
       x-ngsi:    
         model: https://schema.org/Number    
         type: Property    
     waterPressure:    
-      description: Pressure of water flowing from the water storage tank corresponding to this observation.    
+      description: 'Property. Model:''https://schema.org/Number''. Pressure of water flowing from the water storage tank corresponding to this observation.'    
       type: number    
       x-ngsi:    
         model: https://schema.org/Number    
         type: Property    
     waterTemperature:    
-      description: Water temperature in the water storage tank corresponding to this observation.    
+      description: 'Property. Model:''https://schema.org/Number''. Water temperature in the water storage tank corresponding to this observation.'    
       type: number    
       x-ngsi:    
         model: https://schema.org/Number    
@@ -508,8 +508,8 @@ WaterDistributionNetwork:
 <!-- /70-MiddleNotes -->  
 <!-- 80-Examples -->  
 ## ペイロードの例  
-#### WaterDistributionNetwork NGSI-v2 key-value の例。  
-WaterDistributionNetworkをJSON-LD形式でkey-valuesにした例です。これは、`options=keyValues`を使用した場合にNGSI-v2と互換性があり、個々のエンティティのコンテキストデータが返される。  
+#### WaterDistributionNetwork NGSI-v2 キー値の例  
+JSON-LD形式のWaterDistributionNetworkのkey-valuesの例である。これはNGSI-v2と互換性があり、`options=keyValues`を使用すると個々のエンティティのコンテキストデータを返す。  
 <details><summary><strong>show/hide example</strong></summary>    
 ```json  
 {  
@@ -567,7 +567,7 @@ WaterDistributionNetwork:
 ```  
 </details>  
 #### WaterDistributionNetwork NGSI-v2 正規化例  
-WaterDistributionNetworkをJSON-LD形式で正規化した例です。これはオプションを使用しない場合、NGSI-v2と互換性があり、個々のエンティティのコンテキストデータを返します。  
+以下は、正規化された JSON-LD 形式の WaterDistributionNetwork の例である。これは、オプションを使用しない場合、NGSI-v2と互換性があり、個々のエンティティのコンテキストデータを返します。  
 <details><summary><strong>show/hide example</strong></summary>    
 ```json  
 {  
@@ -684,8 +684,8 @@ WaterDistributionNetwork:
 }  
 ```  
 </details>  
-#### WaterDistributionNetwork NGSI-LD キー値例  
-WaterDistributionNetworkをJSON-LD形式でkey-valuesにした例です。これは、`options=keyValues`を使用した場合にNGSI-LDと互換性があり、個々のエンティティのコンテキストデータが返される。  
+#### WaterDistributionNetwork NGSI-LD キー値の例  
+以下はWaterDistributionNetworkをJSON-LD形式でkey-valuesとした例である。options=keyValues`を使うとNGSI-LDと互換性があり、個々のエンティティのコンテキストデータを返す。  
 <details><summary><strong>show/hide example</strong></summary>    
 ```json  
 {  
@@ -743,8 +743,8 @@ WaterDistributionNetwork:
 }  
 ```  
 </details>  
-#### WaterDistributionNetwork NGSI-LD 正規化例  
-WaterDistributionNetworkをJSON-LD形式で正規化した例です。これはオプションを使用しない場合、NGSI-LDと互換性があり、個々のエンティティのコンテキストデータを返します。  
+#### 配水網 NGSI-LD 正規化例  
+以下は、正規化された JSON-LD 形式の WaterDistributionNetwork の例である。これは、オプションを使用しない場合、NGSI-LDと互換性があり、個々のエンティティのコンテキストデータを返します。  
 <details><summary><strong>show/hide example</strong></summary>    
 ```json  
 {  
@@ -867,7 +867,7 @@ WaterDistributionNetwork:
 <!-- 90-FooterNotes -->  
 <!-- /90-FooterNotes -->  
 <!-- 95-Units -->  
-マグニチュード単位の扱いについては、[FAQ 10](https://smartdatamodels.org/index.php/faqs/)を参照してください。  
+マグニチュード単位の扱い方については、[FAQ 10](https://smartdatamodels.org/index.php/faqs/)を参照のこと。  
 <!-- /95-Units -->  
 <!-- 97-LastFooter -->  
 ---  

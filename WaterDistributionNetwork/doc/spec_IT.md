@@ -15,7 +15,29 @@
 ## Elenco delle proprietà  
 
 <sup><sub>[*] Se non c'è un tipo in un attributo è perché potrebbe avere diversi tipi o diversi formati/modelli</sub></sup>.  
-- `address[object]`: L'indirizzo postale  . Model: [https://schema.org/address](https://schema.org/address)- `alternateName[string]`: Un nome alternativo per questa voce  - `areaServed[string]`: L'area geografica in cui viene fornito il servizio o l'articolo offerto.  . Model: [https://schema.org/Text](https://schema.org/Text)- `clTSA[object]`: Proprietà. Modello:'https://schema.org/Text'. Concentrazione di cloruri nell'acqua.  . Model: [https://schema.org/Text](https://schema.org/Text)- `compensatedTDS[number]`: Proprietà. Modello:'https://schema.org/Number'. Il valore del livello di TDS (Solidi disciolti totali) nell'acqua con compensazione della temperatura.  . Model: [https://schema.org/Number](https://schema.org/Number)- `dataProvider[string]`: Una sequenza di caratteri che identifica il fornitore dell'entità di dati armonizzata.  - `dateCreated[string]`: Timestamp di creazione dell'entità. Di solito viene assegnato dalla piattaforma di archiviazione.  - `dateModified[string]`: Timestamp dell'ultima modifica dell'entità. Di solito viene assegnato dalla piattaforma di archiviazione.  - `description[string]`: Descrizione dell'articolo  - `deviceInfo[object]`: Proprietà. Modello:'https://schema.org/Text'. Informazioni sul dispositivo associato alle osservazioni.  . Model: [https://schema.org/Text](https://schema.org/Text)- `flowrate[number]`: Proprietà. Modello:'https://schema.org/Number'. Volume d'acqua in entrata/uscita dal serbatoio corrispondente a questa osservazione.  . Model: [https://schema.org/Number](https://schema.org/Number)- `id[*]`: Identificatore univoco dell'entità  - `location[*]`: Riferimento geojson all'elemento. Può essere un punto, una stringa di linea, un poligono, un multi-punto, una stringa di linea o un poligono multiplo.  - `name[string]`: Il nome di questo elemento.  - `observationDateTime[string]`: Proprietà. Modello:'https://schema.org/Text'. Ora dell'ultima osservazione segnalata.  . Model: [https://schema.org/Text](https://schema.org/Text)- `owner[array]`: Un elenco contenente una sequenza di caratteri codificata JSON che fa riferimento agli ID univoci dei proprietari.  - `pHTSA[object]`: Proprietà. Modello:'https://schema.org/Text'. Livello di acidità o di basicità rilevato nell'acqua.  . Model: [https://schema.org/Text](https://schema.org/Text)- `seeAlso[*]`: elenco di uri che puntano a risorse aggiuntive sull'elemento  - `source[string]`: Una sequenza di caratteri che indica la fonte originale dei dati dell'entità come URL. Si consiglia di utilizzare il nome di dominio completamente qualificato del provider di origine o l'URL dell'oggetto di origine.  - `tankBreadth[number]`: Proprietà. Modello:'https://schema.org/Number'. Larghezza del serbatoio d'acqua a forma di cuboide.  . Model: [https://schema.org/Number](https://schema.org/Number)- `tankCapacity[number]`: Proprietà. Modello:'https://schema.org/Number'. Quantità massima di acqua che il serbatoio corrispondente a questa osservazione può contenere.  . Model: [https://schema.org/Number](https://schema.org/Number)- `tankDepth[number]`: Proprietà. Modello:'https://schema.org/Number'. Profondità del serbatoio dell'acqua corrispondente a questa osservazione.  . Model: [https://schema.org/Number](https://schema.org/Number)- `tankDiameter[number]`: Proprietà. Modello:'https://schema.org/Number'. Diametro dei serbatoi d'acqua cilindrici o sferici.  . Model: [https://schema.org/Number](https://schema.org/Number)- `tankLength[number]`: Proprietà. Modello:'https://schema.org/Number'. Lunghezza del serbatoio di stoccaggio dell'acqua a forma di cuboide.  . Model: [https://schema.org/Number](https://schema.org/Number)- `tankName[string]`: Proprietà. Modello:'https://schema.org/Text'. Nome del serbatoio dell'acqua corrispondente a questa osservazione.  . Model: [https://schema.org/Text](https://schema.org/Text)- `tankShape[string]`: Proprietà. Modello:'https://schema.org/Text'. Forma fisica del serbatoio dell'acqua corrispondente a questa osservazione. ENUM: [Cilindrico, Conico, Cuboide, Sferico].  . Model: [https://schema.org/Text](https://schema.org/Text)- `totalML[number]`: Proprietà. Modello:'https://schema.org/Number'. MLD totali di acqua scaricati dal serbatoio corrispondente a questa osservazione.  . Model: [https://schema.org/Number](https://schema.org/Number)- `turbidityTSA[object]`: Proprietà. Modello:'https://schema.org/Text'. Misura della quantità di luce che viene diffusa dal materiale presente nell'acqua quando una luce viene fatta passare attraverso l'acqua.  . Model: [https://schema.org/Text](https://schema.org/Text)- `uncompensatedTDS[number]`: Proprietà. Modello:'https://schema.org/Number'. Il valore del livello di TDS (Solidi disciolti totali) nell'acqua senza compensazione della temperatura.  . Model: [https://schema.org/Number](https://schema.org/Number)- `waterFlow[number]`: Proprietà. Modello:'https://schema.org/Number'. Flusso o corrente dell'acqua che scorre dal serbatoio corrispondente a questa osservazione.  . Model: [https://schema.org/Number](https://schema.org/Number)- `waterLevel[number]`: Proprietà. Modello:'https://schema.org/Number'. Livello attuale dell'acqua nel serbatoio corrispondente a questa osservazione.  . Model: [https://schema.org/Number](https://schema.org/Number)- `waterPressure[number]`: Proprietà. Modello:'https://schema.org/Number'. Pressione dell'acqua che scorre dal serbatoio corrispondente a questa osservazione.  . Model: [https://schema.org/Number](https://schema.org/Number)- `waterTemperature[number]`: Proprietà. Modello:'https://schema.org/Number'. Temperatura dell'acqua nel serbatoio corrispondente a questa osservazione.  . Model: [https://schema.org/Number](https://schema.org/Number)<!-- /30-PropertiesList -->  
+- `address[object]`: L'indirizzo postale  . Model: [https://schema.org/address](https://schema.org/address)	- `addressCountry[string]`: Il paese. Ad esempio, la Spagna  . Model: [https://schema.org/addressCountry](https://schema.org/addressCountry)  
+	- `addressLocality[string]`: La località in cui si trova l'indirizzo civico e che si trova nella regione  . Model: [https://schema.org/addressLocality](https://schema.org/addressLocality)  
+	- `addressRegion[string]`: La regione in cui si trova la località, e che si trova nel paese  . Model: [https://schema.org/addressRegion](https://schema.org/addressRegion)  
+	- `district[string]`: Un distretto è un tipo di divisione amministrativa che, in alcuni paesi, è gestita dal governo locale.    
+	- `postOfficeBoxNumber[string]`: Il numero di casella postale per gli indirizzi di casella postale. Ad esempio, 03578  . Model: [https://schema.org/postOfficeBoxNumber](https://schema.org/postOfficeBoxNumber)  
+	- `postalCode[string]`: Il codice postale. Ad esempio, 24004  . Model: [https://schema.org/https://schema.org/postalCode](https://schema.org/https://schema.org/postalCode)  
+	- `streetAddress[string]`: L'indirizzo stradale  . Model: [https://schema.org/streetAddress](https://schema.org/streetAddress)  
+- `alternateName[string]`: Un nome alternativo per questa voce  - `areaServed[string]`: L'area geografica in cui viene fornito il servizio o l'articolo offerto.  . Model: [https://schema.org/Text](https://schema.org/Text)- `clTSA[object]`: Concentrazione di cloruri nell'acqua  	- `avgOverTime[number]`: Descrive il valore medio di una serie temporale di dati per una durata specificata nel passato. La durata è specificata utilizzando un altro parametro nell'oggetto descrittore di valore relativo a questo valore.  . Model: [https://schema.org/Number](https://schema.org/Number)  
+	- `instValue[number]`: Descrive il valore istantaneo (associato al timestamp corrente) di una quantità variabile nel tempo.  . Model: [https://schema.org/Number](https://schema.org/Number)  
+	- `maxOverTime[number]`: Descrive il valore massimo di una serie temporale di dati per una durata specificata nel passato. La durata è specificata utilizzando un altro parametro nell'oggetto descrittore di valore relativo a questo valore.  . Model: [https://schema.org/Number](https://schema.org/Number)  
+- `compensatedTDS[number]`: Il valore del livello di TDS (Solidi Disciolti Totali) nell'acqua con compensazione della temperatura  . Model: [https://schema.org/Number](https://schema.org/Number)- `dataProvider[string]`: una sequenza di caratteri che identifica il fornitore dell'entità di dati armonizzata  - `dateCreated[date-time]`: Timestamp di creazione dell'entità. Di solito viene assegnato dalla piattaforma di archiviazione  - `dateModified[date-time]`: Timestamp dell'ultima modifica dell'entità. Di solito viene assegnato dalla piattaforma di archiviazione  - `description[string]`: Descrizione dell'articolo  - `deviceInfo[object]`: Informazioni sul dispositivo associato alle osservazioni  	- `deviceBatteryStatus[string]`: Indica lo stato di carica della batteria del dispositivo segnalato (collegato, scollegato).  . Model: [https://schema.org/Text](https://schema.org/Text)  
+	- `deviceID[string]`: ID dispositivo del sensore fisico/stazione di misura corrispondente a questa osservazione  . Model: [https://schema.org/Text](https://schema.org/Text)  
+	- `deviceModel[object]`: Descrive le informazioni del dispositivo, del sensore o del sistema in esame.    
+	- `deviceName[string]`: Nome del dispositivo o della stazione del dispositivo/stazione del sensore corrispondente a questa osservazione.  . Model: [https://schema.org/Text](https://schema.org/Text)  
+	- `deviceSimNumber[string]`: Indica il numero di sim del dispositivo nel veicolo per la gestione dei rifiuti.  . Model: [https://schema.org/Text](https://schema.org/Text)  
+	- `measurand[string]`: Proprietà/percezioni rilevate/osservate/misurate dal dispositivo  . Model: [https://schema.org/Text](https://schema.org/Text)  
+- `flowrate[number]`: Volume d'acqua in entrata/uscita dal serbatoio corrispondente a questa osservazione  . Model: [https://schema.org/Number](https://schema.org/Number)- `id[*]`: Identificatore univoco dell'entità  - `location[*]`: Riferimento geojson all'elemento. Può essere un punto, una stringa di linea, un poligono, un multi-punto, una stringa di linea o un poligono multiplo.  - `name[string]`: Il nome di questo elemento  - `observationDateTime[date-time]`: Ultima ora di osservazione segnalata  . Model: [https://schema.org/Date-Time](https://schema.org/Date-Time)- `owner[array]`: Un elenco contenente una sequenza di caratteri codificata JSON che fa riferimento agli ID univoci dei proprietari.  - `pHTSA[object]`: Livello di acidità o basicità osservato nell'acqua  	- `avgOverTime[number]`: Descrive il valore medio di una serie temporale di dati per una durata specificata nel passato. La durata è specificata utilizzando un altro parametro nell'oggetto descrittore di valore relativo a questo valore.  . Model: [https://schema.org/Number](https://schema.org/Number)  
+	- `instValue[number]`: Descrive il valore istantaneo (associato al timestamp corrente) di una quantità variabile nel tempo.  . Model: [https://schema.org/Number](https://schema.org/Number)  
+	- `maxOverTime[number]`: Descrive il valore massimo di una serie temporale di dati per una durata specificata nel passato. La durata è specificata utilizzando un altro parametro nell'oggetto descrittore di valore relativo a questo valore.  . Model: [https://schema.org/Number](https://schema.org/Number)  
+- `seeAlso[*]`: elenco di uri che puntano a risorse aggiuntive sull'elemento  - `source[string]`: Una sequenza di caratteri che indica la fonte originale dei dati dell'entità come URL. Si consiglia di utilizzare il nome di dominio completamente qualificato del provider di origine o l'URL dell'oggetto di origine.  - `tankBreadth[number]`: Larghezza del serbatoio di stoccaggio dell'acqua a forma cuboidale  . Model: [https://schema.org/Number](https://schema.org/Number)- `tankCapacity[number]`: Quantità massima di acqua che il serbatoio corrispondente a questa osservazione può contenere  . Model: [https://schema.org/Number](https://schema.org/Number)- `tankDepth[number]`: Profondità del serbatoio di stoccaggio dell'acqua corrispondente a questa osservazione  . Model: [https://schema.org/Number](https://schema.org/Number)- `tankDiameter[number]`: Diametro dei serbatoi di stoccaggio dell'acqua cilindrici o sferici  . Model: [https://schema.org/Number](https://schema.org/Number)- `tankLength[number]`: Lunghezza del serbatoio di stoccaggio dell'acqua a forma di cuboide  . Model: [https://schema.org/Number](https://schema.org/Number)- `tankName[string]`: Nome del serbatoio di stoccaggio dell'acqua corrispondente a questa osservazione  . Model: [https://schema.org/Text](https://schema.org/Text)- `tankShape[string]`: Forma fisica del serbatoio di stoccaggio dell'acqua corrispondente a questa osservazione. ENUM: [Cilindrico, Conico, Cuboide, Sferico].  . Model: [https://schema.org/Text](https://schema.org/Text)- `totalML[number]`: MLD totali di acqua scaricati dal serbatoio di accumulo corrispondenti a questa osservazione  . Model: [https://schema.org/Number](https://schema.org/Number)- `turbidityTSA[object]`: Misura della quantità di luce che viene diffusa dal materiale presente nell'acqua quando una luce viene fatta passare attraverso l'acqua.  	- `avgOverTime[number]`: Descrive il valore medio di una serie temporale di dati per una durata specificata nel passato. La durata è specificata utilizzando un altro parametro nell'oggetto descrittore di valore relativo a questo valore.  . Model: [https://schema.org/Number](https://schema.org/Number)  
+	- `instValue[number]`: Descrive il valore istantaneo (associato al timestamp corrente) di una quantità variabile nel tempo.  . Model: [https://schema.org/Number](https://schema.org/Number)  
+	- `maxOverTime[number]`: Descrive il valore massimo di una serie temporale di dati per una durata specificata nel passato. La durata è specificata utilizzando un altro parametro nell'oggetto descrittore di valore relativo a questo valore.  . Model: [https://schema.org/Number](https://schema.org/Number)  
+- `uncompensatedTDS[number]`: Il valore del livello di TDS (Solidi totali disciolti) nell'acqua senza compensazione della temperatura.  . Model: [https://schema.org/Number](https://schema.org/Number)- `waterFlow[number]`: Flusso o corrente dell'acqua che scorre dal serbatoio di accumulo corrispondente a questa osservazione  . Model: [https://schema.org/Number](https://schema.org/Number)- `waterLevel[number]`: Livello attuale dell'acqua nel serbatoio corrispondente a questa osservazione  . Model: [https://schema.org/Number](https://schema.org/Number)- `waterPressure[number]`: Pressione dell'acqua che scorre dal serbatoio corrispondente a questa osservazione  . Model: [https://schema.org/Number](https://schema.org/Number)- `waterTemperature[number]`: Temperatura dell'acqua nell'accumulatore corrispondente a questa osservazione  . Model: [https://schema.org/Number](https://schema.org/Number)<!-- /30-PropertiesList -->  
 <!-- 35-RequiredProperties -->  
 Proprietà richieste  
 - `id`  - `type`  <!-- /35-RequiredProperties -->  
@@ -35,29 +57,51 @@ WaterDistributionNetwork:
       description: The mailing address    
       properties:    
         addressCountry:    
-          description: 'Property. The country. For example, Spain. Model:''https://schema.org/addressCountry'''    
+          description: 'The country. For example, Spain'    
           type: string    
+          x-ngsi:    
+            model: https://schema.org/addressCountry    
+            type: Property    
         addressLocality:    
-          description: 'Property. The locality in which the street address is, and which is in the region. Model:''https://schema.org/addressLocality'''    
+          description: 'The locality in which the street address is, and which is in the region'    
           type: string    
+          x-ngsi:    
+            model: https://schema.org/addressLocality    
+            type: Property    
         addressRegion:    
-          description: 'Property. The region in which the locality is, and which is in the country. Model:''https://schema.org/addressRegion'''    
+          description: 'The region in which the locality is, and which is in the country'    
           type: string    
+          x-ngsi:    
+            model: https://schema.org/addressRegion    
+            type: Property    
         district:    
-          description: 'A district is a type of administrative division that, in some countries, is managed by the local government.'    
+          description: 'A district is a type of administrative division that, in some countries, is managed by the local government'    
           type: string    
+          x-ngsi:    
+            type: Property    
         postOfficeBoxNumber:    
-          description: 'Property. The post office box number for PO box addresses. For example, 03578. Model:''https://schema.org/postOfficeBoxNumber'''    
+          description: 'The post office box number for PO box addresses. For example, 03578'    
           type: string    
+          x-ngsi:    
+            model: https://schema.org/postOfficeBoxNumber    
+            type: Property    
         postalCode:    
-          description: 'Property. The postal code. For example, 24004. Model:''https://schema.org/https://schema.org/postalCode'''    
+          description: 'The postal code. For example, 24004'    
           type: string    
+          x-ngsi:    
+            model: https://schema.org/https://schema.org/postalCode    
+            type: Property    
         streetAddress:    
-          description: 'Property. The street address. Model:''https://schema.org/streetAddress'''    
+          description: The street address    
           type: string    
+          x-ngsi:    
+            model: https://schema.org/streetAddress    
+            type: Property    
         streetNr:    
-          description: Number identifying a specific property on a public street.    
+          description: Number identifying a specific property on a public street    
           type: string    
+          x-ngsi:    
+            type: Property    
       type: object    
       x-ngsi:    
         model: https://schema.org/address    
@@ -74,43 +118,54 @@ WaterDistributionNetwork:
         model: https://schema.org/Text    
         type: Property    
     clTSA:    
-      description: 'Property. Model:''https://schema.org/Text''. Concentration of chlorides in the water.'    
+      description: Concentration of chlorides in the water    
       properties:    
         avgOverTime:    
-          description: 'Property. Model:''https://schema.org/Text''. Describes the average value of a time-series data over a specified duration in past. The duration is specified using another parameter in the value descriptor object related to this value'    
+          description: Describes the average value of a time-series data over a specified duration in past. The duration is specified using another parameter in the value descriptor object related to this value    
           type: number    
+          x-ngsi:    
+            model: https://schema.org/Number    
+            type: Property    
         instValue:    
-          description: 'Property. Model:''https://schema.org/Text''. Describes the instantaneous value (associated with the current timestamp) of a time varying quantity.'    
+          description: Describes the instantaneous value (associated with the current timestamp) of a time varying quantity    
           type: number    
+          x-ngsi:    
+            model: https://schema.org/Number    
+            type: Property    
         maxOverTime:    
-          description: 'Property. Model:''https://schema.org/Text''. Describes the maximum value of a time-series data over a specified duration in past. The duration is specified using another parameter in the value descriptor object related to this value'    
+          description: Describes the maximum value of a time-series data over a specified duration in past. The duration is specified using another parameter in the value descriptor object related to this value    
           type: number    
+          x-ngsi:    
+            model: https://schema.org/Number    
+            type: Property    
         minOverTime:    
-          description: 'Property. Model:''https://schema.org/Text''. Describes the minimum value of a time-series data over a specified duration in past. The duration is specified using another parameter in the value descriptor object related to this value'    
+          description: Describes the minimum value of a time-series data over a specified duration in past. The duration is specified using another parameter in the value descriptor object related to this value    
           type: number    
+          x-ngsi:    
+            model: https://schema.org/Number    
+            type: Property    
       type: object    
       x-ngsi:    
-        model: https://schema.org/Text    
         type: Property    
     compensatedTDS:    
-      description: 'Property. Model:''https://schema.org/Number''. The value of TDS (Total Dissolved Solids) level in the water with temperature compensation.'    
+      description: The value of TDS (Total Dissolved Solids) level in the water with temperature compensation    
       type: number    
       x-ngsi:    
         model: https://schema.org/Number    
         type: Property    
     dataProvider:    
-      description: A sequence of characters identifying the provider of the harmonised data entity.    
+      description: A sequence of characters identifying the provider of the harmonised data entity    
       type: string    
       x-ngsi:    
         type: Property    
     dateCreated:    
-      description: Entity creation timestamp. This will usually be allocated by the storage platform.    
+      description: Entity creation timestamp. This will usually be allocated by the storage platform    
       format: date-time    
       type: string    
       x-ngsi:    
         type: Property    
     dateModified:    
-      description: Timestamp of the last modification of the entity. This will usually be allocated by the storage platform.    
+      description: Timestamp of the last modification of the entity. This will usually be allocated by the storage platform    
       format: date-time    
       type: string    
       x-ngsi:    
@@ -121,69 +176,104 @@ WaterDistributionNetwork:
       x-ngsi:    
         type: Property    
     deviceInfo:    
-      description: 'Property. Model:''https://schema.org/Text''. Information about the device associated with the observations.'    
+      description: Information about the device associated with the observations    
       properties:    
         deviceBatteryStatus:    
-          description: 'Property. Model:''https://schema.org/Text''. Gives the Battery charging status of the reporting device(Connected, Disconnected).'    
+          description: 'Gives the Battery charging status of the reporting device(Connected, Disconnected)'    
           type: string    
+          x-ngsi:    
+            model: https://schema.org/Text    
+            type: Property    
         deviceID:    
-          description: 'Property. Model:''https://schema.org/Text''. Device ID of the physical sensor/ measurement station corresponding to this observation.'    
+          description: Device ID of the physical sensor/ measurement station corresponding to this observation    
           type: string    
+          x-ngsi:    
+            model: https://schema.org/Text    
+            type: Property    
         deviceModel:    
-          description: 'Property. Model:''https://schema.org/Text''. Describes the information of the device, sensor or system in consideration.'    
+          description: 'Describes the information of the device, sensor or system in consideration'    
           properties:    
             brandName:    
-              description: 'Property. Model:''https://schema.org/Text''. Name of the brand associated with an entity, e.g., sensor, device etc.'    
+              description: 'Name of the brand associated with an entity, e.g., sensor, device etc'    
               type: string    
+              x-ngsi:    
+                model: https://schema.org/Text    
+                type: Property    
             manufacturerName:    
-              description: 'Property. Model:''https://schema.org/Text''. Name of the manufacturer associated with an entity, e.g., sensor, device etc.'    
+              description: 'Name of the manufacturer associated with an entity, e.g., sensor, device etc'    
               type: string    
+              x-ngsi:    
+                model: https://schema.org/Text    
+                type: Property    
             modelName:    
-              description: 'Property. Model:''https://schema.org/Text''. Name of a specific model associated with an entity, e.g., sensor, device etc.'    
+              description: 'Name of a specific model associated with an entity, e.g., sensor, device etc'    
               type: string    
+              x-ngsi:    
+                model: https://schema.org/Text    
+                type: Property    
             modelURL:    
-              description: 'Property. Model:''https://schema.org/Text''. URL providing further information of a specific model associated with an entity, e.g., sensor, device etc.'    
+              description: 'URL providing further information of a specific model associated with an entity, e.g., sensor, device etc'    
               type: string    
+              x-ngsi:    
+                model: https://schema.org/Text    
+                type: Property    
           type: object    
+          x-ngsi:    
+            type: Property    
         deviceName:    
-          description: 'Property. Model:''https://schema.org/Text''. Device Name or Station name of the sensor device/station corresponding to this observation.'    
+          description: Device Name or Station name of the sensor device/station corresponding to this observation    
           type: string    
+          x-ngsi:    
+            model: https://schema.org/Text    
+            type: Property    
         deviceSimNumber:    
-          description: 'Property. Model:''https://schema.org/Text''. Gives the sim number of the device in the waste management vehicle.'    
+          description: Gives the sim number of the device in the waste management vehicle    
           type: string    
+          x-ngsi:    
+            model: https://schema.org/Text    
+            type: Property    
         measurand:    
-          description: 'Property. Model:''https://schema.org/Text''. Property/properties sensed/observed/measured by the device.'    
+          description: Property/properties sensed/observed/measured by the device    
           type: string    
+          x-ngsi:    
+            model: https://schema.org/Text    
+            type: Property    
         rfID:    
-          description: 'Property. Model:''https://schema.org/Text''. Gives the ID of the RFID reader.'    
+          description: Gives the ID of the RFID reader    
           type: string    
+          x-ngsi:    
+            model: https://schema.org/Text    
+            type: Property    
       type: object    
       x-ngsi:    
-        model: https://schema.org/Text    
         type: Property    
     flowrate:    
-      description: 'Property. Model:''https://schema.org/Number''. Volume of water flowing in/out of the water storage tank corresponding to this observation.'    
+      description: Volume of water flowing in/out of the water storage tank corresponding to this observation    
       type: number    
       x-ngsi:    
         model: https://schema.org/Number    
         type: Property    
     id:    
-      anyOf: &waterdistributionnetwork_-_properties_-_owner_-_items_-_anyof    
-        - description: Property. Identifier format of any NGSI entity    
+      anyOf:    
+        - description: Identifier format of any NGSI entity    
           maxLength: 256    
           minLength: 1    
           pattern: ^[\w\-\.\{\}\$\+\*\[\]`|~^@!,:\\]+$    
           type: string    
-        - description: Property. Identifier format of any NGSI entity    
+          x-ngsi:    
+            type: Property    
+        - description: Identifier format of any NGSI entity    
           format: uri    
           type: string    
+          x-ngsi:    
+            type: Property    
       description: Unique identifier of the entity    
       x-ngsi:    
         type: Property    
     location:    
       description: 'Geojson reference to the item. It can be Point, LineString, Polygon, MultiPoint, MultiLineString or MultiPolygon'    
       oneOf:    
-        - description: GeoProperty. Geojson reference to the item. Point    
+        - description: Geojson reference to the item. Point    
           properties:    
             bbox:    
               items:    
@@ -204,7 +294,9 @@ WaterDistributionNetwork:
             - coordinates    
           title: GeoJSON Point    
           type: object    
-        - description: GeoProperty. Geojson reference to the item. LineString    
+          x-ngsi:    
+            type: GeoProperty    
+        - description: Geojson reference to the item. LineString    
           properties:    
             bbox:    
               items:    
@@ -228,7 +320,9 @@ WaterDistributionNetwork:
             - coordinates    
           title: GeoJSON LineString    
           type: object    
-        - description: GeoProperty. Geojson reference to the item. Polygon    
+          x-ngsi:    
+            type: GeoProperty    
+        - description: Geojson reference to the item. Polygon    
           properties:    
             bbox:    
               items:    
@@ -254,7 +348,9 @@ WaterDistributionNetwork:
             - coordinates    
           title: GeoJSON Polygon    
           type: object    
-        - description: GeoProperty. Geojson reference to the item. MultiPoint    
+          x-ngsi:    
+            type: GeoProperty    
+        - description: Geojson reference to the item. MultiPoint    
           properties:    
             bbox:    
               items:    
@@ -277,7 +373,9 @@ WaterDistributionNetwork:
             - coordinates    
           title: GeoJSON MultiPoint    
           type: object    
-        - description: GeoProperty. Geojson reference to the item. MultiLineString    
+          x-ngsi:    
+            type: GeoProperty    
+        - description: Geojson reference to the item. MultiLineString    
           properties:    
             bbox:    
               items:    
@@ -303,7 +401,9 @@ WaterDistributionNetwork:
             - coordinates    
           title: GeoJSON MultiLineString    
           type: object    
-        - description: GeoProperty. Geojson reference to the item. MultiLineString    
+          x-ngsi:    
+            type: GeoProperty    
+        - description: Geojson reference to the item. MultiLineString    
           properties:    
             bbox:    
               items:    
@@ -331,46 +431,73 @@ WaterDistributionNetwork:
             - coordinates    
           title: GeoJSON MultiPolygon    
           type: object    
+          x-ngsi:    
+            type: GeoProperty    
       x-ngsi:    
         type: GeoProperty    
     name:    
-      description: The name of this item.    
+      description: The name of this item    
       type: string    
       x-ngsi:    
         type: Property    
     observationDateTime:    
-      description: 'Property. Model:''https://schema.org/Text''. Last reported time of observation.'    
+      description: Last reported time of observation    
       format: date-time    
       type: string    
       x-ngsi:    
-        model: https://schema.org/Text    
+        model: https://schema.org/Date-Time    
         type: Property    
     owner:    
       description: A List containing a JSON encoded sequence of characters referencing the unique Ids of the owner(s)    
       items:    
-        anyOf: *waterdistributionnetwork_-_properties_-_owner_-_items_-_anyof    
-        description: Property. Unique identifier of the entity    
+        anyOf:    
+          - description: Identifier format of any NGSI entity    
+            maxLength: 256    
+            minLength: 1    
+            pattern: ^[\w\-\.\{\}\$\+\*\[\]`|~^@!,:\\]+$    
+            type: string    
+            x-ngsi:    
+              type: Property    
+          - description: Identifier format of any NGSI entity    
+            format: uri    
+            type: string    
+            x-ngsi:    
+              type: Property    
+        description: Unique identifier of the entity    
+        x-ngsi:    
+          type: Property    
       type: array    
       x-ngsi:    
         type: Property    
     pHTSA:    
-      description: 'Property. Model:''https://schema.org/Text''. Acidity level or basicity level obsevered in the water.'    
+      description: Acidity level or basicity level observed in the water    
       properties:    
         avgOverTime:    
-          description: 'Property. Model:''https://schema.org/Text''. Describes the average value of a time-series data over a specified duration in past. The duration is specified using another parameter in the value descriptor object related to this value'    
+          description: Describes the average value of a time-series data over a specified duration in past. The duration is specified using another parameter in the value descriptor object related to this value    
           type: number    
+          x-ngsi:    
+            model: https://schema.org/Number    
+            type: Property    
         instValue:    
-          description: 'Property. Model:''https://schema.org/Text''. Describes the instantaneous value (associated with the current timestamp) of a time varying quantity.'    
+          description: Describes the instantaneous value (associated with the current timestamp) of a time varying quantity    
           type: number    
+          x-ngsi:    
+            model: https://schema.org/Number    
+            type: Property    
         maxOverTime:    
-          description: 'Property. Model:''https://schema.org/Text''. Describes the maximum value of a time-series data over a specified duration in past. The duration is specified using another parameter in the value descriptor object related to this value'    
+          description: Describes the maximum value of a time-series data over a specified duration in past. The duration is specified using another parameter in the value descriptor object related to this value    
           type: number    
+          x-ngsi:    
+            model: https://schema.org/Number    
+            type: Property    
         minOverTime:    
-          description: 'Property. Model:''https://schema.org/Text''. Describes the minimum value of a time-series data over a specified duration in past. The duration is specified using another parameter in the value descriptor object related to this value'    
+          description: Describes the minimum value of a time-series data over a specified duration in past. The duration is specified using another parameter in the value descriptor object related to this value    
           type: number    
+          x-ngsi:    
+            model: https://schema.org/Number    
+            type: Property    
       type: object    
       x-ngsi:    
-        model: https://schema.org/Text    
         type: Property    
     seeAlso:    
       description: list of uri pointing to additional resources about the item    
@@ -385,48 +512,48 @@ WaterDistributionNetwork:
       x-ngsi:    
         type: Property    
     source:    
-      description: 'A sequence of characters giving the original source of the entity data as a URL. Recommended to be the fully qualified domain name of the source provider, or the URL to the source object.'    
+      description: 'A sequence of characters giving the original source of the entity data as a URL. Recommended to be the fully qualified domain name of the source provider, or the URL to the source object'    
       type: string    
       x-ngsi:    
         type: Property    
     tankBreadth:    
-      description: 'Property. Model:''https://schema.org/Number''. Breadth of the Cuboid shaped water storage tank.'    
+      description: Breadth of the Cuboid shaped water storage tank    
       type: number    
       x-ngsi:    
         model: https://schema.org/Number    
         type: Property    
     tankCapacity:    
-      description: 'Property. Model:''https://schema.org/Number''. Maximum amount of water the water storage tank corresponding to this observation can hold.'    
+      description: Maximum amount of water the water storage tank corresponding to this observation can hold    
       type: number    
       x-ngsi:    
         model: https://schema.org/Number    
         type: Property    
     tankDepth:    
-      description: 'Property. Model:''https://schema.org/Number''. Depth of the water storage tank corresponding to this observation.'    
+      description: Depth of the water storage tank corresponding to this observation    
       type: number    
       x-ngsi:    
         model: https://schema.org/Number    
         type: Property    
     tankDiameter:    
-      description: 'Property. Model:''https://schema.org/Number''. Diameter of Cylindrical or Spherical water storage tanks.'    
+      description: Diameter of Cylindrical or Spherical water storage tanks    
       type: number    
       x-ngsi:    
         model: https://schema.org/Number    
         type: Property    
     tankLength:    
-      description: 'Property. Model:''https://schema.org/Number''. Length of the Cuboid shaped water storage tank.'    
+      description: Length of the Cuboid shaped water storage tank    
       type: number    
       x-ngsi:    
         model: https://schema.org/Number    
         type: Property    
     tankName:    
-      description: 'Property. Model:''https://schema.org/Text''. Name of the water storage tank corresponding to this observation.'    
+      description: Name of the water storage tank corresponding to this observation    
       type: string    
       x-ngsi:    
         model: https://schema.org/Text    
         type: Property    
     tankShape:    
-      description: 'Property. Model:''https://schema.org/Text''. Physical shape of the water storage tank corresponding to this observation. ENUM: [Cylindrical, Conical, Cuboid, Spherical]'    
+      description: 'Physical shape of the water storage tank corresponding to this observation. ENUM: [Cylindrical, Conical, Cuboid, Spherical]'    
       enum:    
         - Cylindrical    
         - Conical    
@@ -437,56 +564,67 @@ WaterDistributionNetwork:
         model: https://schema.org/Text    
         type: Property    
     totalML:    
-      description: 'Property. Model:''https://schema.org/Number''. Total MLDs of water discharged from the water storage tank corresponding to this observation.'    
+      description: Total MLDs of water discharged from the water storage tank corresponding to this observation    
       type: number    
       x-ngsi:    
         model: https://schema.org/Number    
         type: Property    
     turbidityTSA:    
-      description: 'Property. Model:''https://schema.org/Text''. Measurement of the amount of light that is scattered by material in the water when a light is shined through the water.'    
+      description: Measurement of the amount of light that is scattered by material in the water when a light is shined through the water    
       properties:    
         avgOverTime:    
-          description: 'Property. Model:''https://schema.org/Text''. Describes the average value of a time-series data over a specified duration in past. The duration is specified using another parameter in the value descriptor object related to this value'    
+          description: Describes the average value of a time-series data over a specified duration in past. The duration is specified using another parameter in the value descriptor object related to this value    
           type: number    
+          x-ngsi:    
+            model: https://schema.org/Number    
+            type: Property    
         instValue:    
-          description: 'Property. Model:''https://schema.org/Text''. Describes the instantaneous value (associated with the current timestamp) of a time varying quantity.'    
+          description: Describes the instantaneous value (associated with the current timestamp) of a time varying quantity    
           type: number    
+          x-ngsi:    
+            model: https://schema.org/Number    
+            type: Property    
         maxOverTime:    
-          description: 'Property. Model:''https://schema.org/Text''. Describes the maximum value of a time-series data over a specified duration in past. The duration is specified using another parameter in the value descriptor object related to this value'    
+          description: Describes the maximum value of a time-series data over a specified duration in past. The duration is specified using another parameter in the value descriptor object related to this value    
           type: number    
+          x-ngsi:    
+            model: https://schema.org/Number    
+            type: Property    
         minOverTime:    
-          description: 'Property. Model:''https://schema.org/Text''. Describes the minimum value of a time-series data over a specified duration in past. The duration is specified using another parameter in the value descriptor object related to this value'    
+          description: Describes the minimum value of a time-series data over a specified duration in past. The duration is specified using another parameter in the value descriptor object related to this value    
           type: number    
+          x-ngsi:    
+            model: https://schema.org/Number    
+            type: Property    
       type: object    
       x-ngsi:    
-        model: https://schema.org/Text    
         type: Property    
     uncompensatedTDS:    
-      description: 'Property. Model:''https://schema.org/Number''. The value of TDS (Total Dissolved Solids) level in the water without temperature compensation.'    
+      description: The value of TDS (Total Dissolved Solids) level in the water without temperature compensation    
       type: number    
       x-ngsi:    
         model: https://schema.org/Number    
         type: Property    
     waterFlow:    
-      description: 'Property. Model:''https://schema.org/Number''. Flow or current of water flowing from the water storage tank corresponding to this observation.'    
+      description: Flow or current of water flowing from the water storage tank corresponding to this observation    
       type: number    
       x-ngsi:    
         model: https://schema.org/Number    
         type: Property    
     waterLevel:    
-      description: 'Property. Model:''https://schema.org/Number''. Current water level in the water storage tank corresponding to this observation.'    
+      description: Current water level in the water storage tank corresponding to this observation    
       type: number    
       x-ngsi:    
         model: https://schema.org/Number    
         type: Property    
     waterPressure:    
-      description: 'Property. Model:''https://schema.org/Number''. Pressure of water flowing from the water storage tank corresponding to this observation.'    
+      description: Pressure of water flowing from the water storage tank corresponding to this observation    
       type: number    
       x-ngsi:    
         model: https://schema.org/Number    
         type: Property    
     waterTemperature:    
-      description: 'Property. Model:''https://schema.org/Number''. Water temperature in the water storage tank corresponding to this observation.'    
+      description: Water temperature in the water storage tank corresponding to this observation    
       type: number    
       x-ngsi:    
         model: https://schema.org/Number    

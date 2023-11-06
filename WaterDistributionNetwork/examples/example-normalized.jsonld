@@ -111,5 +111,8 @@
   "uncompensatedTDS": {
     "type": "Property",
     "value": 27
-  }
+  },
+  "@context": [
+		"https://raw.githubusercontent.com/smart-data-models/dataModel.WaterDistribution/master/context.jsonld"
+	]
 }

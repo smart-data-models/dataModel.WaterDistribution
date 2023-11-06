@@ -2,43 +2,43 @@
   "id": "uri:ngsi-ld:WaterDistributionNetwork:0001",
   "type": "WaterDistributionNetwork",
   "tankDiameter": {
-    "type": "number",
+    "type": "Number",
     "value": 10
   },
   "totalML": {
-    "type": "number",
+    "type": "Number",
     "value": 250
   },
   "tankCapacity": {
-    "type": "number",
+    "type": "Number",
     "value": 500
   },
   "waterFlow": {
-    "type": "number",
+    "type": "Number",
     "value": 14
   },
   "tankBreadth": {
-    "type": "number",
+    "type": "Number",
     "value": 50
   },
   "tankDepth": {
-    "type": "number",
+    "type": "Number",
     "value": 200
   },
   "flowrate": {
-    "type": "number",
+    "type": "Number",
     "value": 70
   },
   "tankLength": {
-    "type": "number",
+    "type": "Number",
     "value": 300
   },
   "waterTemperature": {
-    "type": "number",
+    "type": "Number",
     "value": 20
   },
   "waterPressure": {
-    "type": "number",
+    "type": "Number",
     "value": 5
   },
   "turbidityTSA": {
@@ -86,7 +86,7 @@
     }
   },
   "waterLevel": {
-    "type": "number",
+    "type": "Number",
     "value": 57
   },
   "tankName": {
@@ -98,15 +98,15 @@
     "value": "Cylindrical"
   },
   "observationDateTime": {
-    "type": "Date-Time",
+    "type": "DateTime",
     "value": "2021-03-11T15:51:02+05:30"
   },
   "compensatedTDS": {
-    "type": "number",
+    "type": "Number",
     "value": 25
   },
   "uncompensatedTDS": {
-    "type": "number",
+    "type": "Number",
     "value": 27
   }
 }

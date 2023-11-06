@@ -1,6 +1,5 @@
 {
 	"id": "uri:ngsi-ld:WaterDistributionNetwork:0001",
-	"@context": "iudx:WaterDistributionNetwork",
 	"type": "WaterDistributionNetwork",
 	"tankDiameter": 10,
 	"totalML": 250,
@@ -49,5 +48,8 @@
 	"tankShape": "Cylindrical",
 	"observationDateTime": "2021-03-11T15:51:02+05:30",
 	"compensatedTDS":25,
-	"uncompensatedTDS":27
+	"uncompensatedTDS":27,
+	"@context": [
+		"https://raw.githubusercontent.com/smart-data-models/dataModel.WaterDistribution/master/context.jsonld"
+	]
 }

@@ -1,0 +1,392 @@
+{
+    "@id": "dtmi:com:ngsi-ld:WaterDistributionNetwork;0",
+    "@type": "Interface",
+    "@context": "dtmi:dtdl:context;2",
+    "comment": "Smart Data models - WaterDistributionNetwork schema adapted to DTDL from smartdatamodels.org. Source: https://raw.githubusercontent.com/smart-data-models/dataModel.WaterDistribution/master/WaterDistributionNetwork/schema.json",
+    "description": "A Data Model for water supply network in a city.",
+    "displayName": "WaterDistributionNetwork",
+    "contents": [
+        {
+            "name": "alternateName",
+            "writable": true,
+            "displayName": "alternateName",
+            "@type": "Property",
+            "schema": "string",
+            "comment": "An alternative name for this item"
+        },
+        {
+            "name": "areaServed",
+            "writable": true,
+            "displayName": "areaServed",
+            "@type": "Property",
+            "schema": "string",
+            "comment": "The geographic area where a service or offered item is provided"
+        },
+        {
+            "name": "compensatedTDS",
+            "writable": true,
+            "displayName": "compensatedTDS",
+            "@type": "Property",
+            "schema": "long",
+            "comment": "The value of TDS (Total Dissolved Solids) level in the water with temperature compensation"
+        },
+        {
+            "name": "dataProvider",
+            "writable": true,
+            "displayName": "dataProvider",
+            "@type": "Property",
+            "schema": "string",
+            "comment": "A sequence of characters identifying the provider of the harmonised data entity"
+        },
+        {
+            "name": "dateCreated",
+            "writable": true,
+            "displayName": "dateCreated",
+            "@type": "Property",
+            "schema": "dateTime",
+            "comment": "Entity creation timestamp. This will usually be allocated by the storage platform"
+        },
+        {
+            "name": "dateModified",
+            "writable": true,
+            "displayName": "dateModified",
+            "@type": "Property",
+            "schema": "dateTime",
+            "comment": "Timestamp of the last modification of the entity. This will usually be allocated by the storage platform"
+        },
+        {
+            "name": "description",
+            "writable": true,
+            "displayName": "description",
+            "@type": "Property",
+            "schema": "string",
+            "comment": "A description of this item"
+        },
+        {
+            "name": "flowrate",
+            "writable": true,
+            "displayName": "flowrate",
+            "@type": "Property",
+            "schema": "long",
+            "comment": "Volume of water flowing in/out of the water storage tank corresponding to this observation"
+        },
+        {
+            "name": "location",
+            "writable": true,
+            "displayName": "location"
+        },
+        {
+            "name": "name",
+            "writable": true,
+            "displayName": "name",
+            "@type": "Property",
+            "schema": "string",
+            "comment": "The name of this item"
+        },
+        {
+            "name": "observationDateTime",
+            "writable": true,
+            "displayName": "observationDateTime",
+            "@type": "Property",
+            "schema": "dateTime",
+            "comment": "Last reported time of observation"
+        },
+        {
+            "name": "seeAlso",
+            "writable": true,
+            "displayName": "seeAlso"
+        },
+        {
+            "name": "source",
+            "writable": true,
+            "displayName": "source",
+            "@type": "Property",
+            "schema": "string",
+            "comment": "A sequence of characters giving the original source of the entity data as a URL. Recommended to be the fully qualified domain name of the source provider, or the URL to the source object"
+        },
+        {
+            "name": "tankBreadth",
+            "writable": true,
+            "displayName": "tankBreadth",
+            "@type": "Property",
+            "schema": "long",
+            "comment": "Breadth of the Cuboid shaped water storage tank"
+        },
+        {
+            "name": "tankCapacity",
+            "writable": true,
+            "displayName": "tankCapacity",
+            "@type": "Property",
+            "schema": "long",
+            "comment": "Maximum amount of water the water storage tank corresponding to this observation can hold"
+        },
+        {
+            "name": "tankDepth",
+            "writable": true,
+            "displayName": "tankDepth",
+            "@type": "Property",
+            "schema": "long",
+            "comment": "Depth of the water storage tank corresponding to this observation"
+        },
+        {
+            "name": "tankDiameter",
+            "writable": true,
+            "displayName": "tankDiameter",
+            "@type": "Property",
+            "schema": "long",
+            "comment": "Diameter of Cylindrical or Spherical water storage tanks"
+        },
+        {
+            "name": "tankLength",
+            "writable": true,
+            "displayName": "tankLength",
+            "@type": "Property",
+            "schema": "long",
+            "comment": "Length of the Cuboid shaped water storage tank"
+        },
+        {
+            "name": "tankName",
+            "writable": true,
+            "displayName": "tankName",
+            "@type": "Property",
+            "schema": "string",
+            "comment": "Name of the water storage tank corresponding to this observation"
+        },
+        {
+            "name": "totalML",
+            "writable": true,
+            "displayName": "totalML",
+            "@type": "Property",
+            "schema": "long",
+            "comment": "Total MLDs of water discharged from the water storage tank corresponding to this observation"
+        },
+        {
+            "name": "uncompensatedTDS",
+            "writable": true,
+            "displayName": "uncompensatedTDS",
+            "@type": "Property",
+            "schema": "long",
+            "comment": "The value of TDS (Total Dissolved Solids) level in the water without temperature compensation"
+        },
+        {
+            "name": "waterFlow",
+            "writable": true,
+            "displayName": "waterFlow",
+            "@type": "Property",
+            "schema": "long",
+            "comment": "Flow or current of water flowing from the water storage tank corresponding to this observation"
+        },
+        {
+            "name": "waterLevel",
+            "writable": true,
+            "displayName": "waterLevel",
+            "@type": "Property",
+            "schema": "long",
+            "comment": "Current water level in the water storage tank corresponding to this observation"
+        },
+        {
+            "name": "waterPressure",
+            "writable": true,
+            "displayName": "waterPressure",
+            "@type": "Property",
+            "schema": "long",
+            "comment": "Pressure of water flowing from the water storage tank corresponding to this observation"
+        },
+        {
+            "name": "waterTemperature",
+            "writable": true,
+            "displayName": "waterTemperature",
+            "@type": "Property",
+            "schema": "long",
+            "comment": "Water temperature in the water storage tank corresponding to this observation"
+        },
+        {
+            "@type": "Telemetry",
+            "name": "owner",
+            "schema": {
+                "@type": "Array",
+                "elementSchema": "string"
+            },
+            "comment": "A List containing a JSON encoded sequence of characters referencing the unique Ids of the owner(s)",
+            "displayName": "owner"
+        },
+        {
+            "@type": "object",
+            "name": "address",
+            "comment": "The mailing address",
+            "displayName": "address",
+            "fields": [
+                {
+                    "name": "addressCountry",
+                    "schema": "string"
+                },
+                {
+                    "name": "addressLocality",
+                    "schema": "string"
+                },
+                {
+                    "name": "addressRegion",
+                    "schema": "string"
+                },
+                {
+                    "name": "district",
+                    "schema": "string"
+                },
+                {
+                    "name": "postOfficeBoxNumber",
+                    "schema": "string"
+                },
+                {
+                    "name": "postalCode",
+                    "schema": "string"
+                },
+                {
+                    "name": "streetAddress",
+                    "schema": "string"
+                },
+                {
+                    "name": "streetNr",
+                    "schema": "string"
+                }
+            ]
+        },
+        {
+            "@type": "object",
+            "name": "clTSA",
+            "comment": "Concentration of chlorides in the water",
+            "displayName": "clTSA",
+            "fields": [
+                {
+                    "name": "avgOverTime",
+                    "schema": "long"
+                },
+                {
+                    "name": "instValue",
+                    "schema": "long"
+                },
+                {
+                    "name": "maxOverTime",
+                    "schema": "long"
+                },
+                {
+                    "name": "minOverTime",
+                    "schema": "long"
+                }
+            ]
+        },
+        {
+            "@type": "object",
+            "name": "deviceInfo",
+            "comment": "Information about the device associated with the observations",
+            "displayName": "deviceInfo",
+            "fields": [
+                {
+                    "name": "deviceBatteryStatus",
+                    "schema": "string"
+                },
+                {
+                    "name": "deviceID",
+                    "schema": "string"
+                },
+                {
+                    "name": "deviceModel",
+                    "schema": "object"
+                },
+                {
+                    "name": "deviceName",
+                    "schema": "string"
+                },
+                {
+                    "name": "deviceSimNumber",
+                    "schema": "string"
+                },
+                {
+                    "name": "measurand",
+                    "schema": "string"
+                },
+                {
+                    "name": "rfID",
+                    "schema": "string"
+                }
+            ]
+        },
+        {
+            "@type": "object",
+            "name": "pHTSA",
+            "comment": "Acidity level or basicity level observed in the water",
+            "displayName": "pHTSA",
+            "fields": [
+                {
+                    "name": "avgOverTime",
+                    "schema": "long"
+                },
+                {
+                    "name": "instValue",
+                    "schema": "long"
+                },
+                {
+                    "name": "maxOverTime",
+                    "schema": "long"
+                },
+                {
+                    "name": "minOverTime",
+                    "schema": "long"
+                }
+            ]
+        },
+        {
+            "@type": "object",
+            "name": "turbidityTSA",
+            "comment": "Measurement of the amount of light that is scattered by material in the water when a light is shined through the water",
+            "displayName": "turbidityTSA",
+            "fields": [
+                {
+                    "name": "avgOverTime",
+                    "schema": "long"
+                },
+                {
+                    "name": "instValue",
+                    "schema": "long"
+                },
+                {
+                    "name": "maxOverTime",
+                    "schema": "long"
+                },
+                {
+                    "name": "minOverTime",
+                    "schema": "long"
+                }
+            ]
+        },
+        {
+            "@type": "Telemetry",
+            "name": "tankShape",
+            "schema": {
+                "@type": "Enum",
+                "valueSchema": "string",
+                "enumValues": [
+                    {
+                        "name": "Cylindrical",
+                        "displayName": "Cylindrical",
+                        "enumValue": 1
+                    },
+                    {
+                        "name": "Conical",
+                        "displayName": "Conical",
+                        "enumValue": 2
+                    },
+                    {
+                        "name": "Cuboid",
+                        "displayName": "Cuboid",
+                        "enumValue": 3
+                    },
+                    {
+                        "name": "Spherical",
+                        "displayName": "Spherical",
+                        "enumValue": 4
+                    }
+                ]
+            }
+        }
+    ]
+}

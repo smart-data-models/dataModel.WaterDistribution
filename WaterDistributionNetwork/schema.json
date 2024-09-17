@@ -1,11 +1,14 @@
 {
-  "$schema": "https://json-schema.org/draft/2020-12/schema",
-  "$schemaVersion": "0.3.4",
-  "modelTags": "IUDX",
-  "$id": "https://smart-data-models.github.io/dataModel.Weather/WeatherObserved/schema.json",
-  "title": "Weather Observed schema - Smart Data Models",
-  "description": "An observation of weather conditions at a certain place and time. This data model has been developed in cooperation with mobile operators and the GSMA.",
+  "$schema": "https://json-schema.org/schema",
+  "$schemaVersion": "0.0.2",
+  "$id": "https://smart-data-models.github.io/dataModel.WaterDistribution/WaterDistributionNetwork/schema.json",
+  "title": "Smart Data models - WaterDistributionNetwork schema",
+  "description": "A Data Model for water supply network in a city.",
   "type": "object",
+  "required": [
+    "id",
+    "type"
+  ],
   "allOf": [
     {
       "$ref": "https://smart-data-models.github.io/data-models/common-schema.json#/definitions/GSMA-Commons"
@@ -14,132 +17,204 @@
       "$ref": "https://smart-data-models.github.io/data-models/common-schema.json#/definitions/Location-Commons"
     },
     {
-      "$ref": "https://smart-data-models.github.io/dataModel.Weather/weather-schema.json#/definitions/Weather-Commons"
-    },
-    {
       "properties": {
         "type": {
           "type": "string",
+          "description": "Property. NGSI Entity type. It has to be WaterDistributionNetwork",
           "enum": [
-            "WeatherObserved"
-          ],
-          "description": "Property. NGSI Entity type. It has to be WeatherObserved"
+            "WaterDistributionNetwork"
+          ]
         },
-        "dateObserved": {
-          "$ref": "https://smart-data-models.github.io/data-models/common-schema.json#/definitions/dateObserved"
-        },
-        "precipitation": {
+        "tankDiameter": {
           "type": "number",
-          "minimum": 0,
-          "description": "Property. Model:'https://schema.org/Number'. Amount of water rain registered. Units:'Liters per square meter'. "
+          "description": "Property. Model:'https://schema.org/Number'. Diameter of Cylindrical or Spherical water storage tanks"
         },
-        "solarRadiation": {
+        "totalML": {
           "type": "number",
-          "minimum": 0,
-          "description": "Property. Model:'https://schema.org/Number'. The solar radiation observed measured in Watts per square. Units:'w/m2'"
+          "description": "Property. Model:'https://schema.org/Number'. Total MLDs of water discharged from the water storage tank corresponding to this observation"
         },
-        "directIrradiation": {
+        "tankCapacity": {
           "type": "number",
-          "minimum": 0,
-          "description": "Property. Model:'https://schema.org/Number'. Direct irradiance is the part of the solar irradiance that directly reaches a surface. Units:'w/m2'"
+          "description": "Property. Model:'https://schema.org/Number'. Maximum amount of water the water storage tank corresponding to this observation can hold"
         },
-        "diffuseIrradiation": {
+        "waterFlow": {
           "type": "number",
-          "minimum": 0,
-          "description": "Property. Model:'https://schema.org/Number'. Diffuse irradiance is the part of the solar irradiance that is scattered by the atmosphere. Units:'w/m2'"
+          "description": "Property. Model:'https://schema.org/Number'. Flow or current of water flowing from the water storage tank corresponding to this observation"
         },
-        "pressureTendency": {
-          "oneOf": [
-            {
-              "type": "string",
-              "enum": [
-                "falling",
-                "raising",
-                "steady"
-              ]
-            },
-            {
-              "type": "number"
-            }
-          ],
-          "description": "Property. Enum:'falling, raising, steady'. Is the pressure rising or falling? It can be expressed in quantitative terms or qualitative terms"
-        },
-        "dewPoint": {
+        "tankBreadth": {
           "type": "number",
-          "description": "Property. Model:'https://schema.org/Number'. Units:'Celsius degrees'. The dew point encoded as a number. Observed temperature to which air must be cooled to become saturated with water vapor"
+          "description": "Property. Model:'https://schema.org/Number'. Breadth of the Cuboid shaped water storage tank"
         },
-        "refDevice": {
-          "anyOf": [
-            {
-              "type": "string",
-              "minLength": 1,
-              "maxLength": 256,
-              "pattern": "^[\\w\\-\\.\\{\\}\\$\\+\\*\\[\\]`|~^@!,:\\\\]+$",
-              "description": "Property. Identifier format of any NGSI entity"
-            },
-            {
-              "type": "string",
-              "format": "uri",
-              "description": "Property. Identifier format of any NGSI entity"
-            }
-          ],
-          "description": "Relationship. Model:'https://schema.org/URL'. A reference to the device(s) which captured this observation"
-        },
-        "streamGauge": {
+        "tankDepth": {
           "type": "number",
-          "minimum": 0,
-          "description": "Property. Model:'https://schema.org/Number'. The water level surface elevation observed by Hydrometric measurement sensors, namely a [Stream Gauge](https://en.wikipedia.org/wiki/Stream_gauge) expressed in centimeters. Units:'centimeters'"
+          "description": "Property. Model:'https://schema.org/Number'. Depth of the water storage tank corresponding to this observation"
         },
-        "snowHeight": {
+        "flowrate": {
           "type": "number",
-          "minimum": 0,
-          "description": "Property. Model:'https://schema.org/Number'. The snow height observed by generic snow depth measurement sensors, expressed in centimeters. Units:'centimeters'"
+          "description": "Property. Model:'https://schema.org/Number'. Volume of water flowing in/out of the water storage tank corresponding to this observation"
         },
-        "uVIndexMax": {
+        "tankLength": {
           "type": "number",
-          "minimum": 0,
-          "description": "Property. Model:'https://schema.org/Number'. The maximum UV index for the period, based on the World Health Organization's UV Index measure. [http://www.who.int/uv/intersunprogramme/activities/uv_index/en/](http://www.who.int/uv/intersunprogramme/activities/uv_index/en/) the values between 1 and 11 are the valid range for the index. The value 0 is for describing that no signal is detected so no value is stored"
+          "description": "Property. Model:'https://schema.org/Number'. Length of the Cuboid shaped water storage tank"
         },
-        "aqiMajorPollutant": {
-          "type": "string",
-          "description": "Property. Model:'https://schema.org/Text'. Major pollutant in the Air Quality Index (AQI)"
-        },
-        "aqiMajorPollutantForecast": {
-          "type": "string",
-          "description": "Property. Model:'https://schema.org/Text'. Forecasted major air pollutant in the Air Quality Index (AQI) over a certain duration in future"
-        },
-        "airTemperatureForecast": {
+        "waterTemperature": {
           "type": "number",
-          "description": "Property. Model:'https://schema.org/Number'. Forecasted value of air temperature over a certain duration in future"
+          "description": "Property. Model:'https://schema.org/Number'. Water temperature in the water storage tank corresponding to this observation"
         },
-        "precipitationForecast": {
+        "waterPressure": {
           "type": "number",
-          "description": "Property. Model:'https://schema.org/Number'. Forecasted rainfall over a certain duration in future"
+          "description": "Property. Model:'https://schema.org/Number'. Pressure of water flowing from the water storage tank corresponding to this observation"
         },
-        "airQualityIndex": {
-          "type": "number",
-          "description": "Property. Model:'https://schema.org/Number'. Air quality index is a number used to report the quality of the air on any given day"
-        },
-        "relativeHumidityForecast": {
-          "type": "number",
-          "description": "Property. Model:'https://schema.org/Number'. Forecasted relative humidity (water vapour in air) over a certain duration in future"
-        },
-        "airQualityIndexForecast": {
-          "type": "number",
-          "description": "Property. Model:'https://schema.org/Number'. Forecasted overall Air Quality Index (AQI) over a certain duration in future"
-        },
-        "airTemperatureTSA": {
+        "turbidityTSA": {
           "type": "object",
-          "description": "Property. Air temperature time series aggregation",
-          "$ref": "https://smart-data-models.github.io/dataModel.Environment/Environment-schema.json#/definitions/TimeSeriesAggregation"
+          "description": "Property. Measurement of the amount of light that is scattered by material in the water when a light is shined through the water",
+          "properties": {
+            "avgOverTime": {
+              "type": "number",
+              "description": "Property. Model:'https://schema.org/Number'. Describes the average value of a time-series data over a specified duration in past. The duration is specified using another parameter in the value descriptor object related to this value"
+            },
+            "maxOverTime": {
+              "type": "number",
+              "description": "Property. Model:'https://schema.org/Number'. Describes the maximum value of a time-series data over a specified duration in past. The duration is specified using another parameter in the value descriptor object related to this value"
+            },
+            "instValue": {
+              "type": "number",
+              "description": "Property. Model:'https://schema.org/Number'. Describes the instantaneous value (associated with the current timestamp) of a time varying quantity"
+            },
+            "minOverTime": {
+              "type": "number",
+              "description": "Property. Model:'https://schema.org/Number'. Describes the minimum value of a time-series data over a specified duration in past. The duration is specified using another parameter in the value descriptor object related to this value"
+            }
+          }
+        },
+        "clTSA": {
+          "type": "object",
+          "description": "Property. Concentration of chlorides in the water",
+          "properties": {
+            "avgOverTime": {
+              "type": "number",
+              "description": "Property. Model:'https://schema.org/Number'. Describes the average value of a time-series data over a specified duration in past. The duration is specified using another parameter in the value descriptor object related to this value"
+            },
+            "maxOverTime": {
+              "type": "number",
+              "description": "Property. Model:'https://schema.org/Number'. Describes the maximum value of a time-series data over a specified duration in past. The duration is specified using another parameter in the value descriptor object related to this value"
+            },
+            "instValue": {
+              "type": "number",
+              "description": "Property. Model:'https://schema.org/Number'. Describes the instantaneous value (associated with the current timestamp) of a time varying quantity"
+            },
+            "minOverTime": {
+              "type": "number",
+              "description": "Property. Model:'https://schema.org/Number'. Describes the minimum value of a time-series data over a specified duration in past. The duration is specified using another parameter in the value descriptor object related to this value"
+            }
+          }
+        },
+        "waterLevel": {
+          "type": "number",
+          "description": "Property. Model:'https://schema.org/Number'. Current water level in the water storage tank corresponding to this observation"
+        },
+        "tankName": {
+          "type": "string",
+          "description": "Property. Model:'https://schema.org/Text'. Name of the water storage tank corresponding to this observation"
+        },
+        "observationDateTime": {
+          "type": "string",
+          "format": "date-time",
+          "description": "Property. Model:'https://schema.org/Date-Time'. Last reported time of observation"
+        },
+        "tankShape": {
+          "type": "string",
+          "enum": [
+            "Cylindrical",
+            "Conical",
+            "Cuboid",
+            "Spherical"
+          ],
+          "description": "Property. Model:'https://schema.org/Text'. Physical shape of the water storage tank corresponding to this observation. ENUM: [Cylindrical, Conical, Cuboid, Spherical]"
+        },
+        "pHTSA": {
+          "type": "object",
+          "description": "Property. Acidity level or basicity level observed in the water",
+          "properties": {
+            "avgOverTime": {
+              "type": "number",
+              "description": "Property. Model:'https://schema.org/Number'. Describes the average value of a time-series data over a specified duration in past. The duration is specified using another parameter in the value descriptor object related to this value"
+            },
+            "maxOverTime": {
+              "type": "number",
+              "description": "Property. Model:'https://schema.org/Number'. Describes the maximum value of a time-series data over a specified duration in past. The duration is specified using another parameter in the value descriptor object related to this value"
+            },
+            "instValue": {
+              "type": "number",
+              "description": "Property. Model:'https://schema.org/Number'. Describes the instantaneous value (associated with the current timestamp) of a time varying quantity"
+            },
+            "minOverTime": {
+              "type": "number",
+              "description": "Property. Model:'https://schema.org/Number'. Describes the minimum value of a time-series data over a specified duration in past. The duration is specified using another parameter in the value descriptor object related to this value"
+            }
+          }
+        },
+        "deviceInfo": {
+          "type": "object",
+          "description": "Property. Information about the device associated with the observations",
+          "properties": {
+            "rfID": {
+              "type": "string",
+              "description": "Property. Model:'https://schema.org/Text'. Gives the ID of the RFID reader"
+            },
+            "deviceBatteryStatus": {
+              "type": "string",
+              "description": "Property. Model:'https://schema.org/Text'. Gives the Battery charging status of the reporting device(Connected, Disconnected)"
+            },
+            "deviceName": {
+              "type": "string",
+              "description": "Property. Model:'https://schema.org/Text'. Device Name or Station name of the sensor device/station corresponding to this observation"
+            },
+            "deviceID": {
+              "type": "string",
+              "description": "Property. Model:'https://schema.org/Text'. Device ID of the physical sensor/ measurement station corresponding to this observation"
+            },
+            "measurand": {
+              "type": "string",
+              "description": "Property. Model:'https://schema.org/Text'. Property/properties sensed/observed/measured by the device"
+            },
+            "deviceSimNumber": {
+              "type": "string",
+              "description": "Property. Model:'https://schema.org/Text'. Gives the sim number of the device in the waste management vehicle"
+            },
+            "deviceModel": {
+              "type": "object",
+              "description": "Property. Describes the information of the device, sensor or system in consideration",
+              "properties": {
+                "brandName": {
+                  "type": "string",
+                  "description": "Property. Model:'https://schema.org/Text'. Name of the brand associated with an entity, e.g., sensor, device etc"
+                },
+                "manufacturerName": {
+                  "type": "string",
+                  "description": "Property. Model:'https://schema.org/Text'. Name of the manufacturer associated with an entity, e.g., sensor, device etc"
+                },
+                "modelName": {
+                  "type": "string",
+                  "description": "Property. Model:'https://schema.org/Text'. Name of a specific model associated with an entity, e.g., sensor, device etc"
+                },
+                "modelURL": {
+                  "type": "string",
+                  "description": "Property. Model:'https://schema.org/Text'. URL providing further information of a specific model associated with an entity, e.g., sensor, device etc"
+                }
+              }
+            }
+          }
+        },
+        "compensatedTDS": {
+          "type": "number",
+          "description": "Property. Model:'https://schema.org/Number'. The value of TDS (Total Dissolved Solids) level in the water with temperature compensation"
+        },
+        "uncompensatedTDS": {
+          "type": "number",
+          "description": "Property. Model:'https://schema.org/Number'. The value of TDS (Total Dissolved Solids) level in the water without temperature compensation"
         }
       }
     }
-  ],
-  "required": [
-    "id",
-    "type",
-    "dateObserved",
-    "location"
   ]
 }

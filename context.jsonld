@@ -10,14 +10,14 @@
         "avgOverTime": "https://smartdatamodels.org/avgOverTime",
         "bbox": {
             "@container": "@list",
-            "@id": "geojson:bbox"
+            "@id": "https://purl.org/geojson/vocab#bbox"
         },
         "brandName": "https://smartdatamodels.org/dataModel.WaterDistribution/brandName",
         "clTSA": "https://smartdatamodels.org/dataModel.WaterDistribution/clTSA",
         "compensatedTDS": "https://smartdatamodels.org/dataModel.WaterDistribution/compensatedTDS",
         "coordinates": {
             "@container": "@list",
-            "@id": "geojson:coordinates"
+            "@id": "https://purl.org/geojson/vocab#coordinates"
         },
         "dataProvider": "https://smartdatamodels.org/dataProvider",
         "dateCreated": "https://smartdatamodels.org/dateCreated",
@@ -33,7 +33,7 @@
         "flowrate": "https://smartdatamodels.org/dataModel.WaterDistribution/flowrate",
         "id": "@id",
         "instValue": "https://smartdatamodels.org/instValue",
-        "location": "ngsi-ld:location",
+        "location": "https://uri.etsi.org/ngsi-ld/location",
         "manufacturerName": "https://smartdatamodels.org/dataModel.WaterDistribution/manufacturerName",
         "maxOverTime": "https://smartdatamodels.org/maxOverTime",
         "measurand": "https://smartdatamodels.org/dataModel.WaterDistribution/measurand",

@@ -1,5 +1,5 @@
 /* (Beta) Export of data model WaterDistributionNetwork of the subject dataModel.WaterDistribution for a PostgreSQL database. Pending translation of enumerations and multityped attributes */
-CREATE TYPE tankShape_type AS ENUM ('Cylindrical', 'Conical', 'Cuboid', 'Spherical');
+CREATE TYPE WaterDistributionNetwork_tankShape_type AS ENUM ('Cylindrical', 'Conical', 'Cuboid', 'Spherical');
 CREATE TYPE WaterDistributionNetwork_type AS ENUM ('WaterDistributionNetwork');
 CREATE TABLE WaterDistributionNetwork (
   "address" JSON,
@@ -27,7 +27,7 @@ CREATE TABLE WaterDistributionNetwork (
   "tankDiameter" NUMERIC,
   "tankLength" NUMERIC,
   "tankName" TEXT,
-  "tankShape" tankShape_type,
+  "tankShape" WaterDistributionNetwork_tankShape_type,
   "totalML" NUMERIC,
   "turbidityTSA" JSON,
   "type" WaterDistributionNetwork_type,
